@@ -1,0 +1,5 @@
+# Verilog (Ignoring System Compilation Files)
+
+Builds*
+
+*.*.bak
