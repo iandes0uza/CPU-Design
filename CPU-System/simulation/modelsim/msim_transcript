@@ -1,0 +1,296 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do CPU-System_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/rotate.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shift_left
+# -- Compiling module shift_right
+# -- Compiling module ar_shift_right
+# -- Compiling module rotate_left
+# -- Compiling module rotate_right
+# 
+# Top level modules:
+# 	shift_left
+# 	shift_right
+# 	ar_shift_right
+# 	rotate_left
+# 	rotate_right
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/mux_2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_2_1
+# 
+# Top level modules:
+# 	mux_2_1
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/logical_ops.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module logical_or
+# -- Compiling module logical_and
+# -- Compiling module logical_not
+# -- Compiling module logical_negate
+# 
+# Top level modules:
+# 	logical_or
+# 	logical_and
+# 	logical_not
+# 	logical_negate
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/gen_regs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gen_regs
+# -- Compiling module pc_reg
+# 
+# Top level modules:
+# 	gen_regs
+# 	pc_reg
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/encoder_32_5.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module encoder_32_5
+# 
+# Top level modules:
+# 	encoder_32_5
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/datapath.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/bus_mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bus_mux
+# 
+# Top level modules:
+# 	bus_mux
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_mult.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bitpair_mult
+# -- Compiling module arithmetic_mult
+# -- Compiling module arithmetic_mult1
+# 
+# Top level modules:
+# 	bitpair_mult
+# 	arithmetic_mult
+# 	arithmetic_mult1
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_div.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arithmetic_div
+# 
+# Top level modules:
+# 	arithmetic_div
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/add_sub.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arithmetic_sub
+# -- Compiling module arithmetic_add
+# -- Compiling module HA
+# -- Compiling module FA
+# -- Compiling module RCA4
+# -- Compiling module RCA16
+# -- Compiling module RCA32
+# -- Compiling module RCA64
+# 
+# Top level modules:
+# 	arithmetic_sub
+# 	arithmetic_add
+# 	RCA64
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/datapath_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath_tb
+# 
+# Top level modules:
+# 	datapath_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  datapath_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps datapath_tb 
+# Loading work.datapath_tb
+# Loading work.datapath
+# Loading work.encoder_32_5
+# Loading work.pc_reg
+# Loading work.gen_regs
+# Loading work.mux_2_1
+# Loading work.alu
+# Loading work.logical_or
+# Loading work.logical_and
+# Loading work.logical_negate
+# Loading work.logical_not
+# Loading work.shift_left
+# Loading work.shift_right
+# Loading work.ar_shift_right
+# Loading work.rotate_left
+# Loading work.rotate_right
+# Loading work.arithmetic_add
+# Loading work.RCA32
+# Loading work.RCA16
+# Loading work.RCA4
+# Loading work.FA
+# Loading work.HA
+# Loading work.arithmetic_sub
+# Loading work.arithmetic_mult
+# Loading work.arithmetic_div
+# Loading work.bus_mux
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns
+do CPU-System_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/rotate.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module shift_left
+# -- Compiling module shift_right
+# -- Compiling module ar_shift_right
+# -- Compiling module rotate_left
+# -- Compiling module rotate_right
+# 
+# Top level modules:
+# 	shift_left
+# 	shift_right
+# 	ar_shift_right
+# 	rotate_left
+# 	rotate_right
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/mux_2_1.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux_2_1
+# 
+# Top level modules:
+# 	mux_2_1
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/logical_ops.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module logical_or
+# -- Compiling module logical_and
+# -- Compiling module logical_not
+# -- Compiling module logical_negate
+# 
+# Top level modules:
+# 	logical_or
+# 	logical_and
+# 	logical_not
+# 	logical_negate
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/gen_regs.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gen_regs
+# -- Compiling module pc_reg
+# 
+# Top level modules:
+# 	gen_regs
+# 	pc_reg
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/encoder_32_5.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module encoder_32_5
+# 
+# Top level modules:
+# 	encoder_32_5
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/datapath.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath
+# 
+# Top level modules:
+# 	datapath
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/bus_mux.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bus_mux
+# 
+# Top level modules:
+# 	bus_mux
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_mult.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module bitpair_mult
+# -- Compiling module arithmetic_mult
+# -- Compiling module arithmetic_mult1
+# 
+# Top level modules:
+# 	bitpair_mult
+# 	arithmetic_mult
+# 	arithmetic_mult1
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_div.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arithmetic_div
+# 
+# Top level modules:
+# 	arithmetic_div
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/alu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/add_sub.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module arithmetic_sub
+# -- Compiling module arithmetic_add
+# -- Compiling module HA
+# -- Compiling module FA
+# -- Compiling module RCA4
+# -- Compiling module RCA16
+# -- Compiling module RCA32
+# -- Compiling module RCA64
+# 
+# Top level modules:
+# 	arithmetic_sub
+# 	arithmetic_add
+# 	RCA64
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/datapath_tb.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module datapath_tb
+# 
+# Top level modules:
+# 	datapath_tb
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  datapath_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps datapath_tb 
+# Loading work.datapath_tb
+# Loading work.datapath
+# Loading work.encoder_32_5
+# Loading work.pc_reg
+# Loading work.gen_regs
+# Loading work.mux_2_1
+# Loading work.alu
+# Loading work.logical_or
+# Loading work.logical_and
+# Loading work.logical_negate
+# Loading work.logical_not
+# Loading work.shift_left
+# Loading work.shift_right
+# Loading work.ar_shift_right
+# Loading work.rotate_left
+# Loading work.rotate_right
+# Loading work.arithmetic_add
+# Loading work.RCA32
+# Loading work.RCA16
+# Loading work.RCA4
+# Loading work.FA
+# Loading work.HA
+# Loading work.arithmetic_sub
+# Loading work.arithmetic_mult
+# Loading work.arithmetic_div
+# Loading work.bus_mux
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1000 ns

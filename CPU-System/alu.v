@@ -1,10 +1,10 @@
-module ALU(input wire [31:0] in_A, in_B, input wire [4:0] op_code, output reg [63:0] out, input clk);
+module alu(input wire [31:0] in_A, in_B, input wire [4:0] op_code, output reg [63:0] out, input clk);
 
 	//ALU wires (32-bit)
 	wire [31:0] OR, AND, NEG, NOT, SHL, SHR, SHRA, ADD, SUB, RTR, RTL;
 	
 	//ALU wires (64-bit)
-	wire [63:0] DIV, MULT;//, RTL, RTR;	
+	wire [63:0] DIV, MULT;
 	
 	always @(*) 
 	begin
@@ -68,6 +68,7 @@ module ALU(input wire [31:0] in_A, in_B, input wire [4:0] op_code, output reg [6
 			5'b01100 : begin	//MULTIPLY
 								out[31:0] <= MULT[31:0];
 								out[63:32] <= MULT[63:32];
+								//out <= in_A * in_B;
 						  end
 			
 			5'b01101 : begin	//DIVIDE

@@ -12,33 +12,40 @@ module booth_algo(input wire[31:0] q, output wire[31:0] sign, value);
 	
 endmodule*/
 
-module arithmetic_mult(input wire[31:0] m, q, output wire[63:0] out);
-	
-	wire signed [63:0] q_shifted = q << 1;
-	reg signed [63:0] sum = 64'b0, temp = 64'b0;
-	reg signed [31:0] hold = 32'b0;
-	wire signed [31:0] negativeM = -m;
-	integer i;
-	
-	always@(*) begin
-		for(i=0;i<16;i=i+1)begin
-			case({q[2*i+1],q[2*i],q_shifted[2*i]})
-				3'b000 , 3'b111 : hold = 32'b0;
-				default : begin
-								case({q[2*i+1],q[2*i],q_shifted[2*i]})
-									3'b001 , 3'b010 : hold = {m[31], m};
-									3'b011 : hold = {m, 1'b0};
-									3'b100 : hold = {negativeM, 1'b0};
-									3'b101 , 3'b110 : hold = negativeM;
-								endcase
-								temp[63:0] = hold << (2*i);
-								sum = sum + (temp);
-							 end
-			endcase
-		end
-	end 
-   assign out = sum;
+
+module arithmetic_mult(input signed [31:0] m, q, output[63:0] out);
+
+    reg [2:0] bit_pair [15:0]; 				
+    reg signed [32:0] hold [15:0];  		
+    reg signed [63:0] shifted_hold [15:0];
+	 reg signed [63:0] sum = 0;
+	 wire signed[32:0] negativeM;
+	 assign negativeM = -m;
+	 integer i;
+	 always @ (m or q or negativeM)
+    begin
+        bit_pair[0] = {q[1], q[0], 1'b0};
+        for(i=1;i<16;i=i+1) begin
+             bit_pair[i] = {q[2*i+1],q[2*i],q[2*i-1]};
+        end
+        for(i=0;i<16;i=i+1)begin
+            case(bit_pair[i])
+                3'b001 , 3'b010 : hold[i] = {m[31],m};
+                3'b011 : hold[i] = {m,1'b0};
+                3'b100 : hold[i] = {negativeM[31:0],1'b0};
+                3'b101 , 3'b110 : hold[i] = negativeM;
+                default : hold[i] = 0;
+            endcase
+            shifted_hold[i] = hold[i] << (2*i);
+        end
+        sum = shifted_hold[0];
+        for(i=1;i<16;i=i+1) begin
+          sum = sum + shifted_hold[i];
+        end
+    end
+    assign out = sum;
 endmodule
+	 
 
 /*
 module bitpair_recoding(input wire[1:0] sign, value, output integer val);
