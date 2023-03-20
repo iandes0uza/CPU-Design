@@ -1,5 +1,5 @@
 `timescale 1ns/10ps
-module multi_div_tb; 	
+module datapath_tb; 	
 	reg PCout, Zhighout, Zlowout, MDRout, R6out, R7out;
 	reg MARin, PCin, MDRin, IRin, Yin;
 	reg IncPC, Read;
@@ -20,7 +20,7 @@ module multi_div_tb;
 
 initial Clear = 0;
 
-	multi_div_datapath DUT(PCout, Zlowout, Zhighout, MDRout, MARin, ZLowIn, ZHighIn, PCin, MDRin, Read, IRin, Yin, IncPC,
+	datapath DUT(PCout, Zlowout, Zhighout, MDRout, MARin, ZLowIn, ZHighIn, PCin, MDRin, Read, IRin, Yin, IncPC,
 					 LOin,
 					 HIin,
 					 op_code,
@@ -36,7 +36,7 @@ initial Clear = 0;
 initial 
 	begin
 		Clock = 0;
-		forever #3 Clock = ~ Clock;
+		forever #5 Clock = ~ Clock;
 end
 
 always @(posedge Clock)//finite state machine; if clock rising-edge
@@ -67,7 +67,7 @@ begin
 				R6in <= 0; R7in <= 0; Mdatain <= 32'h00000000;
 		end
 		Reg_load1a: begin 
-				Mdatain<= 32'd25;//32'hFFFFFFF8
+				Mdatain<= 32'd1637;//32'hFFFFFFF8
 				Read = 0; MDRin = 0;	
 				#10 Read <= 1; MDRin <= 1;  
 				#15 Read <= 0; MDRin <= 0;
@@ -77,7 +77,7 @@ begin
 				#15 MDRout<= 0; R6in <= 0;     
 		end
 		Reg_load2a: begin 
-				Mdatain <= 32'h00000006;
+				Mdatain <= 32'd5877;
 				#10 Read <= 1; MDRin <= 1;  
 				#15 Read <= 0; MDRin <= 0;
 		end
@@ -104,7 +104,7 @@ begin
 				#10 R6out<= 0; Yin <= 0;
 		end
 		T4: begin
-				R7out<= 1; op_code<= MULTI; ZLowIn<= 1; ZHighIn<= 1; 
+				R7out<= 1; op_code<= 5'b01100; ZLowIn<= 1; ZHighIn<= 1; 
 				#10 R7out<= 0; ZLowIn<= 0; ZHighIn<= 0;
 		end
 		T5: begin

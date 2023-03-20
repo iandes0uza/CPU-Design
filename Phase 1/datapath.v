@@ -1,26 +1,27 @@
 `timescale 1ns/10ps
-module datapath(input pc_out, zlo_out, mdr_out, mar_in, zlo_enable, pc_enable, mdr_enable, mdr_read, ir_enable, y_enable, pc_increment, 
+module datapath(input pc_out, zlo_out, zhi_out, mdr_out, mar_in, zlo_enable, zhi_enable, pc_enable, mdr_enable, mdr_read, ir_enable, y_enable, pc_increment, 
+					 lo_enable, hi_enable,
 					 input [4:0] op_code,
 					 input [31:0] data_in,
 					 //Specific Registers Used
-					 input r1_enable,
-					 input r2_enable,
-					 input r3_enable,
-					 input r2_out,
-					 input r3_out,
+					 input r6_enable,
+					 input r7_enable,
+					 input r6_out,
+					 input r7_out,
 					 input clr, clk,
-					 output [31:0] data_zlo);
+					 output [31:0] data_lo,
+					 output [31:0] data_hi);
 					 
 	
 	//General Purpose Connections - ENABLE
 	wire r0_enable, 
-	     //r1_enable,
-		  //r2_enable,
-		  //r3_enable,
+	     r1_enable,
+		  r2_enable,
+		  r3_enable,
 		  r4_enable,
 		  r5_enable,
-		  r6_enable,
-		  r7_enable,
+		  //r6_enable,
+		  //r7_enable,
 		  r8_enable,
 		  r9_enable,
 		  r10_enable,
@@ -28,12 +29,12 @@ module datapath(input pc_out, zlo_out, mdr_out, mar_in, zlo_enable, pc_enable, m
 		  r12_enable,
 		  r13_enable,
 		  r14_enable,
-		  r15_enable,
+		  r15_enable
 		  //y_enable,
-		  hi_enable,
-		  lo_enable,
+		  //hi_enable,
+		  //lo_enable,
 		  //zlo_enable,
-		  zhi_enable
+		  //zhi_enable
 		  //pc_enable,
 		  //mdr_enable,
 		  //ir_enable
@@ -58,9 +59,9 @@ module datapath(input pc_out, zlo_out, mdr_out, mar_in, zlo_enable, pc_enable, m
 					data_r15,
 					data_pc,
 					data_y,
-					data_hi,
-					data_lo,
-					//data_zlo,
+					//data_hi,
+					//data_lo,
+					data_zlo,
 					data_zhi,
 					data_ir,
 					data_inport,
@@ -70,12 +71,12 @@ module datapath(input pc_out, zlo_out, mdr_out, mar_in, zlo_enable, pc_enable, m
 	//General Purpose Connections - OUT FLAG
 	wire r0_out = 0,
 	     r1_out = 0,
-	     //r2_out = 0,
-	     //r3_out = 0,
+	     r2_out = 0,
+	     r3_out = 0,
 	     r4_out = 0,
 	     r5_out = 0,
-	     r6_out = 0,
-	     r7_out = 0,
+	     //r6_out = 0,
+	     //r7_out = 0,
 	     r8_out = 0,
 	     r9_out = 0,
 	     r10_out = 0,
@@ -85,10 +86,9 @@ module datapath(input pc_out, zlo_out, mdr_out, mar_in, zlo_enable, pc_enable, m
 	     r14_out = 0,
 	     r15_out = 0,
 		  //pc_out = 0,
-	     y_out = 0,
 	     hi_out = 0,
 	     lo_out = 0,
-		  zhi_out = 0,
+		  //zhi_out = 0,
 		  //mdr_out = 0,
 		  //zlo_out = 0,
 	     inport_out = 0,
@@ -96,7 +96,7 @@ module datapath(input pc_out, zlo_out, mdr_out, mar_in, zlo_enable, pc_enable, m
 		  
 	//Bus Selection Streamline, simplifies the process to place data on the bus from input
 	wire [4:0] select;
-	encoder_32_5 output_mux({{8{1'b0}}, c_out, inport_out, mdr_out, pc_out, zlo_out, zhi_out, lo_out, hi_out,
+	encoder_32_5 output_mux({{8'b0}, c_out, inport_out, mdr_out, pc_out, zlo_out, zhi_out, lo_out, hi_out,
 													r15_out, r14_out, r13_out, r12_out, r11_out, r10_out, r9_out, r8_out,
 													r7_out, r6_out, r5_out, r4_out, r3_out, r2_out, r1_out, r0_out}, select);
 					
@@ -104,7 +104,7 @@ module datapath(input pc_out, zlo_out, mdr_out, mar_in, zlo_enable, pc_enable, m
 					
 					
 	//Interconnection Wires
-	wire [31:0] bus, mdr_connection;
+	wire [31:0] mdr_connection, bus;
 	
 	//ALU output
 	wire [63:0] c;
@@ -141,7 +141,7 @@ module datapath(input pc_out, zlo_out, mdr_out, mar_in, zlo_enable, pc_enable, m
 	gen_regs r15(data_r15, bus, r15_enable, clr, clk);
 
 	//ALU Module
-	ALU alu_module(data_y, bus, op_code, c, clk);
+	alu alu_module(data_y, bus, op_code, c[63:0], clk);
 	
 	//Bus Multiplexer
 	bus_mux BusMux(bus, select,
