@@ -51,76 +51,8 @@ data_in[28] => data_in[28].IN1
 data_in[29] => data_in[29].IN1
 data_in[30] => data_in[30].IN1
 data_in[31] => data_in[31].IN1
-r6_enable => r6_enable.IN1
-r7_enable => r7_enable.IN1
-r6_out => r6_out.IN1
-r7_out => r7_out.IN1
-clr => clr.IN23
-clk => clk.IN25
-data_lo[0] <= data_lo[0].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[1] <= data_lo[1].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[2] <= data_lo[2].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[3] <= data_lo[3].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[4] <= data_lo[4].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[5] <= data_lo[5].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[6] <= data_lo[6].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[7] <= data_lo[7].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[8] <= data_lo[8].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[9] <= data_lo[9].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[10] <= data_lo[10].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[11] <= data_lo[11].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[12] <= data_lo[12].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[13] <= data_lo[13].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[14] <= data_lo[14].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[15] <= data_lo[15].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[16] <= data_lo[16].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[17] <= data_lo[17].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[18] <= data_lo[18].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[19] <= data_lo[19].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[20] <= data_lo[20].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[21] <= data_lo[21].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[22] <= data_lo[22].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[23] <= data_lo[23].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[24] <= data_lo[24].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[25] <= data_lo[25].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[26] <= data_lo[26].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[27] <= data_lo[27].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[28] <= data_lo[28].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[29] <= data_lo[29].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[30] <= data_lo[30].DB_MAX_OUTPUT_PORT_TYPE
-data_lo[31] <= data_lo[31].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[0] <= data_hi[0].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[1] <= data_hi[1].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[2] <= data_hi[2].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[3] <= data_hi[3].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[4] <= data_hi[4].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[5] <= data_hi[5].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[6] <= data_hi[6].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[7] <= data_hi[7].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[8] <= data_hi[8].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[9] <= data_hi[9].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[10] <= data_hi[10].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[11] <= data_hi[11].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[12] <= data_hi[12].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[13] <= data_hi[13].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[14] <= data_hi[14].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[15] <= data_hi[15].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[16] <= data_hi[16].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[17] <= data_hi[17].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[18] <= data_hi[18].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[19] <= data_hi[19].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[20] <= data_hi[20].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[21] <= data_hi[21].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[22] <= data_hi[22].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[23] <= data_hi[23].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[24] <= data_hi[24].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[25] <= data_hi[25].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[26] <= data_hi[26].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[27] <= data_hi[27].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[28] <= data_hi[28].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[29] <= data_hi[29].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[30] <= data_hi[30].DB_MAX_OUTPUT_PORT_TYPE
-data_hi[31] <= data_hi[31].DB_MAX_OUTPUT_PORT_TYPE
+clr => clr.IN24
+clk => clk.IN26
 
 
 |datapath|encoder_32_5:output_mux
@@ -897,6 +829,203 @@ out[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 out[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|reg_file:sel_enc
+ir_reg[0] => rc_wire[0].IN0
+ir_reg[1] => ~NO_FANOUT~
+ir_reg[2] => ~NO_FANOUT~
+ir_reg[3] => ~NO_FANOUT~
+ir_reg[4] => rb_wire[0].IN0
+ir_reg[5] => ~NO_FANOUT~
+ir_reg[6] => ~NO_FANOUT~
+ir_reg[7] => ~NO_FANOUT~
+ir_reg[8] => ra_wire[0].IN0
+ir_reg[9] => ~NO_FANOUT~
+ir_reg[10] => ~NO_FANOUT~
+ir_reg[11] => ~NO_FANOUT~
+rIN => rIN.IN16
+rOUT => comb.IN0
+baOUT => comb.IN1
+gra => ra_wire[0].IN1
+grb => rb_wire[0].IN1
+grc => rc_wire[0].IN1
+r15_out <= reg_bus:r15.port0
+r14_out <= reg_bus:r14.port0
+r13_out <= reg_bus:r13.port0
+r12_out <= reg_bus:r12.port0
+r11_out <= reg_bus:r11.port0
+r10_out <= reg_bus:r10.port0
+r9_out <= reg_bus:r9.port0
+r8_out <= reg_bus:r8.port0
+r7_out <= reg_bus:r7.port0
+r6_out <= reg_bus:r6.port0
+r5_out <= reg_bus:r5.port0
+r4_out <= reg_bus:r4.port0
+r3_out <= reg_bus:r3.port0
+r2_out <= reg_bus:r2.port0
+r1_out <= reg_bus:r1.port0
+r0_out <= reg_bus:r0.port0
+r15_in <= reg_bus:r15.port1
+r14_in <= reg_bus:r14.port1
+r13_in <= reg_bus:r13.port1
+r12_in <= reg_bus:r12.port1
+r11_in <= reg_bus:r11.port1
+r10_in <= reg_bus:r10.port1
+r9_in <= reg_bus:r9.port1
+r8_in <= reg_bus:r8.port1
+r7_in <= reg_bus:r7.port1
+r6_in <= reg_bus:r6.port1
+r5_in <= reg_bus:r5.port1
+r4_in <= reg_bus:r4.port1
+r3_in <= reg_bus:r3.port1
+r2_in <= reg_bus:r2.port1
+r1_in <= reg_bus:r1.port1
+r0_in <= reg_bus:r0.port1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r0
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r1
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r2
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r3
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r4
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r5
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r6
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r7
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r8
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r9
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r10
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r11
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r12
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r13
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r14
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
+
+
+|datapath|reg_file:sel_enc|reg_bus:r15
+out <= comb.DB_MAX_OUTPUT_PORT_TYPE
+in <= comb.DB_MAX_OUTPUT_PORT_TYPE
+reg_in => comb.IN0
+reg_in => comb.IN0
+rIN => comb.IN1
+rabOUT => comb.IN1
 
 
 |datapath|pc_reg:pc
@@ -2142,6 +2271,216 @@ b[31] => out.DATAB
 
 
 |datapath|gen_regs:mdr
+q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[12] <= q[12]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[13] <= q[13]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[14] <= q[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[15] <= q[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[16] <= q[16]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[17] <= q[17]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[18] <= q[18]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[19] <= q[19]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[20] <= q[20]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[21] <= q[21]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[22] <= q[22]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[23] <= q[23]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[24] <= q[24]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[25] <= q[25]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[26] <= q[26]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[27] <= q[27]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[28] <= q[28]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[29] <= q[29]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[30] <= q[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q[31] <= q[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+d[0] => q.DATAB
+d[1] => q.DATAB
+d[2] => q.DATAB
+d[3] => q.DATAB
+d[4] => q.DATAB
+d[5] => q.DATAB
+d[6] => q.DATAB
+d[7] => q.DATAB
+d[8] => q.DATAB
+d[9] => q.DATAB
+d[10] => q.DATAB
+d[11] => q.DATAB
+d[12] => q.DATAB
+d[13] => q.DATAB
+d[14] => q.DATAB
+d[15] => q.DATAB
+d[16] => q.DATAB
+d[17] => q.DATAB
+d[18] => q.DATAB
+d[19] => q.DATAB
+d[20] => q.DATAB
+d[21] => q.DATAB
+d[22] => q.DATAB
+d[23] => q.DATAB
+d[24] => q.DATAB
+d[25] => q.DATAB
+d[26] => q.DATAB
+d[27] => q.DATAB
+d[28] => q.DATAB
+d[29] => q.DATAB
+d[30] => q.DATAB
+d[31] => q.DATAB
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+en => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clr => q.OUTPUTSELECT
+clk => q[0]~reg0.CLK
+clk => q[1]~reg0.CLK
+clk => q[2]~reg0.CLK
+clk => q[3]~reg0.CLK
+clk => q[4]~reg0.CLK
+clk => q[5]~reg0.CLK
+clk => q[6]~reg0.CLK
+clk => q[7]~reg0.CLK
+clk => q[8]~reg0.CLK
+clk => q[9]~reg0.CLK
+clk => q[10]~reg0.CLK
+clk => q[11]~reg0.CLK
+clk => q[12]~reg0.CLK
+clk => q[13]~reg0.CLK
+clk => q[14]~reg0.CLK
+clk => q[15]~reg0.CLK
+clk => q[16]~reg0.CLK
+clk => q[17]~reg0.CLK
+clk => q[18]~reg0.CLK
+clk => q[19]~reg0.CLK
+clk => q[20]~reg0.CLK
+clk => q[21]~reg0.CLK
+clk => q[22]~reg0.CLK
+clk => q[23]~reg0.CLK
+clk => q[24]~reg0.CLK
+clk => q[25]~reg0.CLK
+clk => q[26]~reg0.CLK
+clk => q[27]~reg0.CLK
+clk => q[28]~reg0.CLK
+clk => q[29]~reg0.CLK
+clk => q[30]~reg0.CLK
+clk => q[31]~reg0.CLK
+
+
+|datapath|mar_reg:mar
+q[0] <= gen_regs:mar_internal.port0
+q[1] <= gen_regs:mar_internal.port0
+q[2] <= gen_regs:mar_internal.port0
+q[3] <= gen_regs:mar_internal.port0
+q[4] <= gen_regs:mar_internal.port0
+q[5] <= gen_regs:mar_internal.port0
+q[6] <= gen_regs:mar_internal.port0
+q[7] <= gen_regs:mar_internal.port0
+q[8] <= gen_regs:mar_internal.port0
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+d[4] => d[4].IN1
+d[5] => d[5].IN1
+d[6] => d[6].IN1
+d[7] => d[7].IN1
+d[8] => d[8].IN1
+d[9] => d[9].IN1
+d[10] => d[10].IN1
+d[11] => d[11].IN1
+d[12] => d[12].IN1
+d[13] => d[13].IN1
+d[14] => d[14].IN1
+d[15] => d[15].IN1
+d[16] => d[16].IN1
+d[17] => d[17].IN1
+d[18] => d[18].IN1
+d[19] => d[19].IN1
+d[20] => d[20].IN1
+d[21] => d[21].IN1
+d[22] => d[22].IN1
+d[23] => d[23].IN1
+d[24] => d[24].IN1
+d[25] => d[25].IN1
+d[26] => d[26].IN1
+d[27] => d[27].IN1
+d[28] => d[28].IN1
+d[29] => d[29].IN1
+d[30] => d[30].IN1
+d[31] => d[31].IN1
+en => en.IN1
+clr => clr.IN1
+clk => clk.IN1
+
+
+|datapath|mar_reg:mar|gen_regs:mar_internal
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -14153,6 +14492,47 @@ result[60] <= A.DB_MAX_OUTPUT_PORT_TYPE
 result[61] <= A.DB_MAX_OUTPUT_PORT_TYPE
 result[62] <= A.DB_MAX_OUTPUT_PORT_TYPE
 result[63] <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|datapath|conff:control
+con_out <= <GND>
+c2_field[0] => ~NO_FANOUT~
+c2_field[1] => ~NO_FANOUT~
+c2_field[2] => ~NO_FANOUT~
+c2_field[3] => ~NO_FANOUT~
+bus[0] => ~NO_FANOUT~
+bus[1] => ~NO_FANOUT~
+bus[2] => ~NO_FANOUT~
+bus[3] => ~NO_FANOUT~
+bus[4] => ~NO_FANOUT~
+bus[5] => ~NO_FANOUT~
+bus[6] => ~NO_FANOUT~
+bus[7] => ~NO_FANOUT~
+bus[8] => ~NO_FANOUT~
+bus[9] => ~NO_FANOUT~
+bus[10] => ~NO_FANOUT~
+bus[11] => ~NO_FANOUT~
+bus[12] => ~NO_FANOUT~
+bus[13] => ~NO_FANOUT~
+bus[14] => ~NO_FANOUT~
+bus[15] => ~NO_FANOUT~
+bus[16] => ~NO_FANOUT~
+bus[17] => ~NO_FANOUT~
+bus[18] => ~NO_FANOUT~
+bus[19] => ~NO_FANOUT~
+bus[20] => ~NO_FANOUT~
+bus[21] => ~NO_FANOUT~
+bus[22] => ~NO_FANOUT~
+bus[23] => ~NO_FANOUT~
+bus[24] => ~NO_FANOUT~
+bus[25] => ~NO_FANOUT~
+bus[26] => ~NO_FANOUT~
+bus[27] => ~NO_FANOUT~
+bus[28] => ~NO_FANOUT~
+bus[29] => ~NO_FANOUT~
+bus[30] => ~NO_FANOUT~
+bus[31] => ~NO_FANOUT~
+con_in => ~NO_FANOUT~
 
 
 |datapath|bus_mux:BusMux

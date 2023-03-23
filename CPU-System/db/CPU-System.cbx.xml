@@ -1,34 +1,5 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="CPU-System">
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add17" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add35" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add53" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add27" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add45" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add9" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add11" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add19" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add37" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add55" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add21" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add29" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add3" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add47" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add13" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add31" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add39" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add57" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add23" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add41" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add49" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add5" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add15" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add33" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add51" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add59" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add25" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add43" CBX_FILE_NAME="add_sub_gui.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add7" CBX_FILE_NAME="add_sub_gui.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
