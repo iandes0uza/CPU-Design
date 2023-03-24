@@ -7,6 +7,7 @@
 		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add27" CBX_FILE_NAME="add_sub_gui.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add45" CBX_FILE_NAME="add_sub_gui.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add9" CBX_FILE_NAME="add_sub_gui.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|ram:ram_connection|altsyncram:ram_contents_rtl_0" CBX_FILE_NAME="altsyncram_v8i1.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add11" CBX_FILE_NAME="add_sub_gui.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add19" CBX_FILE_NAME="add_sub_gui.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|datapath|alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add37" CBX_FILE_NAME="add_sub_gui.tdf"/>

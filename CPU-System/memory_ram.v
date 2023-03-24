@@ -81,7 +81,7 @@ module memory_ram(address,	clock, data, wren, q);
 	defparam
 		altsyncram_component.clock_enable_input_a = "BYPASS",
 		altsyncram_component.clock_enable_output_a = "BYPASS",
-		altsyncram_component.init_file = "ramTest.mif",
+		altsyncram_component.init_file = "test.mif",
 		altsyncram_component.intended_device_family = "Cyclone III",
 		altsyncram_component.lpm_hint = "ENABLE_RUNTIME_MOD=NO",
 		altsyncram_component.lpm_type = "altsyncram",

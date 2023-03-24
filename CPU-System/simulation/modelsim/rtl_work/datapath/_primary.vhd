@@ -19,6 +19,7 @@ entity datapath is
         pc_enable       : in     vl_logic;
         ir_enable       : in     vl_logic;
         pc_increment    : in     vl_logic;
+        con_enable      : in     vl_logic;
         y_enable        : in     vl_logic;
         mdr_read        : in     vl_logic;
         gra             : in     vl_logic;
@@ -29,12 +30,13 @@ entity datapath is
         r_out           : in     vl_logic;
         outport_enable  : in     vl_logic;
         inport_enable   : in     vl_logic;
+        inport_out      : in     vl_logic;
         reg_enable_in   : in     vl_logic_vector(15 downto 0);
         reg_enable_out  : in     vl_logic_vector(15 downto 0);
         opcode          : out    vl_logic_vector(4 downto 0);
         data_in         : in     vl_logic_vector(31 downto 0);
-        inport_data     : in     vl_logic_vector(31 downto 0);
-        outport_data    : in     vl_logic_vector(31 downto 0);
+        data_inport     : in     vl_logic_vector(31 downto 0);
+        data_outport    : in     vl_logic_vector(31 downto 0);
         \bus\           : out    vl_logic_vector(31 downto 0);
         clr             : in     vl_logic;
         clk             : in     vl_logic
