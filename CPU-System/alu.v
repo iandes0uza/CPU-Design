@@ -1,13 +1,15 @@
-module alu(input wire [31:0] in_A, in_B, input wire [4:0] op_code, output reg [63:0] out, input clk);
+module alu(input wire [31:0] in_A, in_B, input wire [4:0] op_code, output reg [63:0] out, input bf, clk);
 
 	//ALU wires (32-bit)
 	wire [31:0] OR, AND, NEG, NOT, SHL, SHR, SHRA, ADD, SUB, RTR, RTL;
 	
+	//C_OUT Wires
+	wire ADD_cout, SUB_cout;
+	
 	//ALU wires (64-bit)
 	wire [63:0] DIV, MULT;
 	
-	always @(*) 
-	begin
+	always @(*) begin
 		case(op_code)
 		
 			5'b00001 : begin	//OR
@@ -68,16 +70,26 @@ module alu(input wire [31:0] in_A, in_B, input wire [4:0] op_code, output reg [6
 			5'b01100 : begin	//MULTIPLY
 								out[31:0] <= MULT[31:0];
 								out[63:32] <= MULT[63:32];
-								//out <= in_A * in_B;
 						  end
 			
 			5'b01101 : begin	//DIVIDE
 								out[31:0] <= DIV[31:0];
 								out[63:32] <= DIV[63:32];
 						  end
-						  
+			5'b01110, 			//LOAD
+			5'b01111,			//LOADI
+			5'b10000,			//STORE
+			5'b10001 : begin	//ADDI
+								out[31:0] <= ADD[31:0];
+								out[63:32] <= 0;
+						  end
+			5'b10010 : begin
+								if(bf) begin
+									out[31:0] <= ADD[31:0];
+									out[63:32] <= 32'd0;
+								end 
+						  end
 			 default : out = 0;
-			
 		endcase
 	end
 	
@@ -95,8 +107,8 @@ module alu(input wire [31:0] in_A, in_B, input wire [4:0] op_code, output reg [6
 	rotate_right rot_right(in_A, in_B[4:0], RTR);
 	
 	//ALU Arithmetic Operations
-	arithmetic_add a_add(in_A, in_B, ADD);
-	arithmetic_sub a_sub(in_A, in_B, SUB);
+	arithmetic_add a_add(in_A, in_B, ADD_cout, ADD);
+	arithmetic_sub a_sub(in_A, in_B, SUB_cout, SUB);
 	arithmetic_mult a_mult(in_A, in_B, MULT);
 	arithmetic_div a_div(in_A, in_B, DIV);
 

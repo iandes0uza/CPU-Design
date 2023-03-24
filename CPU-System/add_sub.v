@@ -1,6 +1,5 @@
-module arithmetic_sub(input wire[31:0] a, b, output wire[31:0] result);
+module arithmetic_sub(input wire [31:0] a, b, output wire c_out, output wire [31:0] result);
 
-	wire c_out;
 	RCA32 sum(c_out, result[31:0], a[31:0], (b[31:0])*(-1), 1'b0);
 	//RCA64 sum(c_out, result[31:0], a[31:0], b[31:0], c_in);
 	
@@ -9,9 +8,8 @@ module arithmetic_sub(input wire[31:0] a, b, output wire[31:0] result);
 endmodule
 
 
-module arithmetic_add(input wire [31:0] a, b, output wire [31:0] result);
+module arithmetic_add(input wire [31:0] a, b, output wire c_out, output wire [31:0] result);
 
-	wire c_out;
 	RCA32 sum(c_out, result[31:0], a[31:0], b[31:0], 1'b0);
 	//RCA64 sum(c_out, result[31:0], a[31:0], b[31:0], c_in);
 	
@@ -19,11 +17,6 @@ module arithmetic_add(input wire [31:0] a, b, output wire [31:0] result);
 		
 endmodule
 
-
-
-
-//In these functions we will use a 32-bit RCA
-//We will start with a half-adder and build up to 32-bit
 
 //Half-Adder
 module HA(output c_out, sum, input a, b);

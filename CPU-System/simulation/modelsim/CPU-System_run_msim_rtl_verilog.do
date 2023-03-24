@@ -5,6 +5,8 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/select_encoder.v}
+vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/conff.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/rotate.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/mux_2_1.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/logical_ops.v}
@@ -16,6 +18,7 @@ vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-Syst
 vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_div.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/alu.v}
 vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/add_sub.v}
+vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/ram.v}
 
 vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/datapath_tb.v}
 

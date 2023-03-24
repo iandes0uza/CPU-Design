@@ -62,7 +62,8 @@ set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id datapath_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1000 ns" -section_id datapath_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME datapath_tb -section_id datapath_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE datapath_tb.v -section_id datapath_tb
-set_global_assignment -name VERILOG_FILE reg_file.v
+set_global_assignment -name HEX_FILE test.hex
+set_global_assignment -name VERILOG_FILE select_encoder.v
 set_global_assignment -name VERILOG_FILE conff.v
 set_global_assignment -name VERILOG_FILE rotate.v
 set_global_assignment -name VERILOG_FILE mux_2_1.v
@@ -76,4 +77,6 @@ set_global_assignment -name VERILOG_FILE arithmetic_mult.v
 set_global_assignment -name VERILOG_FILE arithmetic_div.v
 set_global_assignment -name VERILOG_FILE alu.v
 set_global_assignment -name VERILOG_FILE add_sub.v
+set_global_assignment -name VERILOG_FILE memory_ram.v
+set_global_assignment -name VERILOG_FILE ram.v
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
