@@ -1,29 +1,33 @@
-module select_encoder(input [11:0] ir_reg, input rIN, rOUT, baOUT, gra, grb, grc
+module select_encoder(input [31:0] ir, input rIN, rOUT, baOUT, gra, grb, grc,
 					 output [31:0] data_sign, output [15:0] reg_in, reg_out, 
-					 output [4:0] op, output [3:0] decode);
+					 output [4:0] op, output reg [3:0] decode);
 
 					 
 	wire [15:0] decoder_logic;
 	
+	always@(*) begin
+		if(gra)
+			decode <= ir[26:23];
+		if(grb)
+			decode <= ir[22:19];
+		if(grc) 
+			decode <= ir[18:15];
+	end
 	
-
+	encoder_4_16 s_enc(decoder_logic, decode);
 	
+	assign op = ir[31:27];
+	assign data_sign = {{14{ir[17]}}, ir[17:0]};
+	
+	assign reg_in = {16{rIN}} & decoder_logic;
+	assign reg_out = ({16{rOUT}} | {16{baOUT}})& decoder_logic;
+		
 endmodule
 
-module selectencodelogic(input [31:0] instruction,
-			   input Gra, Grb,Grc,Rin,Rout,BAout,
-			   output [31:0] C_sign_extended,
-			   output [15:0] RegInSel, 
-			   output [15:0] RegOutSel, 
-				output [4:0] opcode, 
-			   output wire [3:0] decoderInput);
-	wire [15:0] decoderOutput;
+module encoder_4_16(output reg [15:0] out, input [3:0] in);
 	
-	assign decoderInput = (instruction[26:23]&{4{Gra}}) | (instruction[22:19]&{4{Grb}}) | (instruction[18:15]&{4{Grc}});
-	encoder_4_to_16 encoder(decoderInput, decoderOutput);
+	always@(*) begin
+		out = 15'b1 << in;
+	end
 	
-	assign opcode = instruction[31:27];
-	assign C_sign_extended = {{14{instruction[17]}},instruction[17:0]};
-	assign RegInSel = {16{Rin}} & decoderOutput;
-	assign RegOutSel = ({16{Rout}} | {16{BAout}}) & decoderOutput;
 endmodule
