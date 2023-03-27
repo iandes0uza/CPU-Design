@@ -76,10 +76,12 @@ begin
              end
          T3: begin 	
 						MDRout<= 0; IRin <= 0;
-						GRA <= 1; Rin <= 1; HIout <= 1;
+						GRA <= 1; Rin <= 1; HIout <= 1; 
+						//LOin <= 1;
              end
          T4: begin	
 						GRA <= 0; Rin <= 0; HIout <= 0;
+						//LOin <= 1;
              end
     endcase 
 end 

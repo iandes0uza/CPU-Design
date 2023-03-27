@@ -17,7 +17,7 @@ module datapath_tb; 	//LOAD IMM TESTBENCH
 
 parameter	Default = 4'b0000, Reg_load1a= 4'b0001, Reg_load1b= 4'b0010,
 					Reg_load2a= 4'b0011, Reg_load2b = 4'b0100, Reg_load3a = 4'b0101,
-					Reg_load3b = 4'b0110, T0= 4'b0111, T1= 4'b1000,T2= 4'b1001, T3= 4'b1010, T4= 4'b1011, T5= 4'b1100, T6= 4'b1101;
+					Reg_load3b = 4'b0110, T0= 4'b0111, T1= 4'b1000,T2= 4'b1001, T3= 4'b1010, T4= 4'b1011, T5= 4'b1100, T6= 4'b1101, T7 = 4'b1110;
 reg	[3:0] Present_state= Default;
 
 
@@ -44,6 +44,8 @@ always @(posedge Clock)
 		T2					:	#40  Present_state = T3;
 		T3					:	#40  Present_state = T4;
 		T4					:	#40 Present_state = T5;	
+		T5					:	#40 Present_state = T6;	
+		T6					:	#40 Present_state = T7;	
        endcase 
    end   
                                                           
@@ -66,10 +68,10 @@ begin
 				 end 
 			T1: begin
 						PCout <= 0; MARin <= 0; IncPC <= 0; ZLowIn <= 0;
-						ZLowout<= 1; PCin <= 1; Read <= 1; MDRin <= 1; Mdatain = 32'd5;
+						ZLowout<= 1; PCin <= 1; Read <= 1; MDRin <= 1;
              end
          T2: begin 
-						ZLowout<= 0; PCin <= 0; Read <= 0; MDRin <= 0; Mdatain = 32'd0;
+						ZLowout<= 0; PCin <= 0; Read <= 0; MDRin <= 0;
 						MDRout <= 1; IRin <= 1;
              end
          T3: begin 	
@@ -78,12 +80,18 @@ begin
              end
          T4: begin	
 						GRB <= 0; BAout <= 0; Yin <= 0;
-						Cout <= 1; ZLowIn <= 1;
+						Cout <= 1; ZHighIn <= 1; ZLowIn <= 1;
              end
-         T5: begin	//LOAD IMMEDIATE
-						Cout <= 0; ZLowIn <= 0;
-						ZLowout<= 1; GRA <= 1; Rin = 1;
-						#40 ZLowout<= 0; GRA <= 0; Rin = 0;
+         T5: begin	
+						Cout <= 0; ZHighIn <= 1; ZLowIn <= 0;
+						ZLowout<= 1; MARin <= 1;
+				 end
+         T6: begin	
+						ZLowout<= 0; MARin <= 0;
+						Read <= 0; GRA <= 1; Rout <= 1;  MDRin <= 1;
+				 end
+         T7: begin	
+						GRA <= 0; Rout <= 0;  MDRin <= 0; MDRout <= 1; RAMin <= 1;
 				 end
     endcase 
 end 

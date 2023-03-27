@@ -61,23 +61,23 @@ begin
         end 
 
          T0: begin                                           
-						PCout <= 1; MARin <= 1; IncPC <= 1; ZLowIn <= 1;
+						PCout <= 1; MARin <= 1; ZLowIn <= 1;
 				 end 
 			T1: begin
-						PCout <= 0; MARin <= 0; IncPC <= 0; ZLowIn <= 0;
-						ZLowout<= 1; PCin <= 1; Read <= 1; MDRin <= 1; Mdatain = 32'd5;
+						PCout <= 0; MARin <= 0; IncPC <= 1; PCin <= 1; ZLowIn <= 0;
+						ZLowout<= 1; Read <= 1; MDRin <= 1;
              end
          T2: begin 
-						ZLowout<= 0; PCin <= 0; Read <= 0; MDRin <= 0; Mdatain = 32'd0;
+						ZLowout<= 0; PCin <= 0; Read <= 0; MDRin <= 0; IncPc <= 0;
 						MDRout <= 1; IRin <= 1;
              end
          T3: begin 	
 						MDRout<= 0; IRin <= 0;
-						PCout <= 1; REGin <= 16'h8000; PCin <= 1, Rin <= 1;
+						PCout <= 1; REGin <= 16'h8000;
              end
          T4: begin	
 						PCout <= 0; REGin <= 16'h0; 
-						GRA <= 1; Rout <=1 ;
+						GRA <= 1; Rout <=1 ; PCin <= 1;
 						#40 PCin<= 0;
              end
     endcase 

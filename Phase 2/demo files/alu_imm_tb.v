@@ -78,10 +78,10 @@ begin
              end
          T4: begin	
 						GRB <= 0; Rout <= 0; Yin <= 0;
-						Cout <= 1; ZLowIn <= 1;
+						Cout <= 1; ZLowIn <= 1; ZHighIn <=0;
              end
          T5: begin
-						Cout <= 0; ZLowIn <= 0;
+						Cout <= 0; ZHighIn <= 0; ZLowIn <= 0;
 						ZLowout<= 1; GRA <= 1; Rin = 1;
 						#40 ZLowout<= 0; GRA <= 0; Rin = 0;
 				 end

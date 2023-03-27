@@ -1,5 +1,5 @@
 `timescale 1ns / 10ps
-module datapath_tb; 	//LOAD IMM TESTBENCH
+module datapath_tb; 	//JUMP TESTBENCH
 	reg PCout, ZHighout, ZLowout, ZHighIn, ZLowIn, MDRout;
 	reg MARin, PCin, MDRin, IRin, Yin, Yout;
 	reg IncPC, Read;

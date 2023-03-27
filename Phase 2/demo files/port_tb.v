@@ -1,5 +1,5 @@
 `timescale 1ns / 10ps
-module datapath_tb; 	//LOAD STW TESTBENCH
+module datapath_tb; 	//INPORT OUTPORT TESTBENCH
 	reg PCout, ZHighout, ZLowout, ZHighIn, ZLowIn, MDRout;
 	reg MARin, PCin, MDRin, IRin, Yin, Yout;
 	reg IncPC, Read;
@@ -43,9 +43,6 @@ always @(posedge Clock)
 		T1					:	#40 Present_state = T2;
 		T2					:	#40  Present_state = T3;
 		T3					:	#40  Present_state = T4;
-		T4					:	#40 Present_state = T5;		//Comment Out the correct T5
-		T5					:	#40 Present_state = T6;
-		T6					:	#40 Present_state = T7;
        endcase 
    end   
                                                           
@@ -64,22 +61,23 @@ begin
         end 
 
          T0: begin                                           
-						PCout <= 1; MARin <= 1; IncPC <= 1; ZLowIn <= 1;
+						PCout <= 1; MARin <= 1; ZLowIn <= 1;
 				 end 
 			T1: begin
-						PCout <= 0; MARin <= 0; IncPC <= 0; ZLowIn <= 0;
-						ZLowout<= 1; PCin <= 1; Read <= 1; MDRin <= 1; Mdatain = 32'd5;
+						PCout <= 0; MARin <= 0; ZLowIn <= 0;
+						ZLowout<= 1; PCin <= 1; IncPC <= 1; Read <= 1; MDRin <= 1;
              end
          T2: begin 
-						ZLowout<= 0; PCin <= 0; Read <= 0; MDRin <= 0; Mdatain = 32'd0;
+						
+						ZLowout<= 0; PCin <= 0; IncPC <= 0; Read <= 0; MDRin <= 0;
 						MDRout <= 1; IRin <= 1;
              end
          T3: begin 	
 						MDRout<= 0; IRin <= 0;
-						GRA <= 1; Rout <= 1; OutPortIn <= 1;
+						GRA <= 1; Rout <= 1; OutPortIn <= 1; //Rin <= 1; InPortOut = 1;
              end
          T4: begin	
-						GRA <= 0; Rout <= 0; OutPortIn <= 0;
+						GRA <= 0; Rout <= 0; OutPortIn <= 0; //Rin <= 0; InPortOut = 0;
              end
     endcase 
 end 
