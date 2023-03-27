@@ -4,13 +4,13 @@ module datapath(input pc_out, zlo_out, zhi_out, mdr_out, mdr_enable, mar_enable,
 							 y_enable, mdr_read, gra, grb, grc, ba_out, r_in, r_out, outport_enable, inport_enable, inport_out,
 					 input [15:0] reg_enable_in, reg_enable_out,
 					 output [4:0] opcode,
-					 input [31:0] data_in, data_inport, data_outport, 
+					 input [31:0] data_in, inport_data, outport_data, 
 					 output [31:0] bus,
 					 input clr, clk);
 
 	//General Purpose Connections - BUS CONNECTION
 	wire [31:0] data_r0, data_r1, data_r2, data_r3, data_r4, data_r5, data_r6, data_r7, 
-					data_r8, data_r9, data_r10, data_r11, data_r12, data_r13, data_r14, 
+					data_r8, data_r9, data_r10, data_r11, data_r12, data_r13, data_r14, data_inport, 
 					data_r15, data_pc, data_y, data_hi, data_lo, data_zlo, data_zhi, data_ir, data_sign, data_mdr, data_ram;
    
 	//Required RAM Connections	
@@ -59,8 +59,8 @@ module datapath(input pc_out, zlo_out, zhi_out, mdr_out, mdr_enable, mar_enable,
 	//(SPECIAL PURPOSE) Program Counter Register
 	pc_reg pc(data_pc, bus, pc_increment, pc_enable, clk);
 	gen_regs y(data_y, bus, y_enable, clr, clk);
-	gen_regs #(12)hi(data_hi, bus, hi_enable, clr, clk);
-	gen_regs lo(data_lo, bus, lo_enable, clr, clk);
+	gen_regs #(1234)hi(data_hi, bus, hi_enable, clr, clk);
+	gen_regs #(444)lo(data_lo, bus, lo_enable, clr, clk);
 	gen_regs zlo(data_zlo, c[31:0], zlo_enable, clr, clk);
 	gen_regs zhi(data_zhi, c[63:32], zhi_enable, clr, clk);
 	gen_regs ir(data_ir, bus, ir_enable, clr, clk);
@@ -72,9 +72,9 @@ module datapath(input pc_out, zlo_out, zhi_out, mdr_out, mdr_enable, mar_enable,
 	
 	//Registers 1-15
 	gen_regs r1(data_r1, bus, reg_in[1], clr, clk);
-	gen_regs #(10)r2(data_r2, bus, reg_in[2], clr, clk);
-	gen_regs r3(data_r3, bus, reg_in[3], clr, clk);
-	gen_regs r4(data_r4, bus, reg_in[4], clr, clk);
+	gen_regs #(38)r2(data_r2, bus, reg_in[2], clr, clk);
+	gen_regs #(1123)r3(data_r3, bus, reg_in[3], clr, clk);
+	gen_regs #(103)r4(data_r4, bus, reg_in[4], clr, clk);
 	gen_regs r5(data_r5, bus, reg_in[5], clr, clk);
 	gen_regs #(-7)r6(data_r6, bus, reg_in[6], clr, clk);
 	gen_regs r7(data_r7, bus, reg_in[7], clr, clk);
@@ -86,7 +86,10 @@ module datapath(input pc_out, zlo_out, zhi_out, mdr_out, mdr_enable, mar_enable,
 	gen_regs r13(data_r13, bus, reg_in[13], clr, clk);
 	gen_regs r14(data_r14, bus, reg_in[14], clr, clk);
 	gen_regs r15(data_r15, bus, reg_in[15], clr, clk);
-	gen_regs outportReg(data_outport, bus, outport_enable, clr, clk);
+	
+	//Port Registers
+	gen_regs #(3286)inport(data_inport, inport_data, inport_enable, clr, clk);
+	gen_regs outport(outport_data, bus, outport_enable, clr, clk);
 
 	//ALU Module
 	alu alu_module(data_y, bus, opcode, c[63:0], con_out, clk);

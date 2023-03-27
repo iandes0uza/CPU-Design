@@ -1,5 +1,5 @@
 Analysis & Synthesis report for CPU-System
-Fri Mar 24 17:48:10 2023
+Fri Mar 24 23:19:16 2023
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -45,54 +45,55 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  37. Parameter Settings for User Entity Instance: gen_regs:r13
  38. Parameter Settings for User Entity Instance: gen_regs:r14
  39. Parameter Settings for User Entity Instance: gen_regs:r15
- 40. Parameter Settings for User Entity Instance: gen_regs:outportReg
- 41. Parameter Settings for Inferred Entity Instance: ram:ram_connection|altsyncram:ram_contents_rtl_0
- 42. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add3
- 43. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add5
- 44. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add7
- 45. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add9
- 46. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add11
- 47. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add13
- 48. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add15
- 49. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add17
- 50. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add19
- 51. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add21
- 52. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add23
- 53. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add25
- 54. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add27
- 55. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add29
- 56. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add31
- 57. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add33
- 58. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add35
- 59. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add37
- 60. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add39
- 61. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add41
- 62. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add43
- 63. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add45
- 64. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add47
- 65. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add49
- 66. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add51
- 67. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add53
- 68. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add55
- 69. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add57
- 70. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add59
- 71. altsyncram Parameter Settings by Entity Instance
- 72. Port Connectivity Checks: "bus_mux:BusMux"
- 73. Port Connectivity Checks: "alu:alu_module|arithmetic_sub:a_sub|RCA32:sum"
- 74. Port Connectivity Checks: "alu:alu_module|arithmetic_sub:a_sub"
- 75. Port Connectivity Checks: "alu:alu_module|arithmetic_add:a_add|RCA32:sum"
- 76. Port Connectivity Checks: "alu:alu_module|arithmetic_add:a_add"
- 77. Port Connectivity Checks: "alu:alu_module|ar_shift_right:a_s_right"
- 78. Port Connectivity Checks: "alu:alu_module|logical_not:l_not"
- 79. Port Connectivity Checks: "alu:alu_module|logical_negate:l_neg"
- 80. Port Connectivity Checks: "gen_regs:outportReg"
- 81. Port Connectivity Checks: "gen_regs:r0"
- 82. Port Connectivity Checks: "select_encoder:s_e"
- 83. Port Connectivity Checks: "mar_reg:mar|gen_regs:mar_internal"
- 84. Port Connectivity Checks: "encoder_32_5:output_mux"
- 85. Elapsed Time Per Partition
- 86. Analysis & Synthesis Messages
- 87. Analysis & Synthesis Suppressed Messages
+ 40. Parameter Settings for User Entity Instance: gen_regs:inport
+ 41. Parameter Settings for User Entity Instance: gen_regs:outport
+ 42. Parameter Settings for Inferred Entity Instance: ram:ram_connection|altsyncram:ram_contents_rtl_0
+ 43. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add3
+ 44. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add5
+ 45. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add7
+ 46. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add9
+ 47. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add11
+ 48. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add13
+ 49. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add15
+ 50. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add17
+ 51. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add19
+ 52. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add21
+ 53. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add23
+ 54. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add25
+ 55. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add27
+ 56. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add29
+ 57. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add31
+ 58. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add33
+ 59. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add35
+ 60. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add37
+ 61. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add39
+ 62. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add41
+ 63. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add43
+ 64. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add45
+ 65. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add47
+ 66. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add49
+ 67. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add51
+ 68. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add53
+ 69. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add55
+ 70. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add57
+ 71. Parameter Settings for Inferred Entity Instance: alu:alu_module|arithmetic_div:a_div|lpm_add_sub:Add59
+ 72. altsyncram Parameter Settings by Entity Instance
+ 73. Port Connectivity Checks: "bus_mux:BusMux"
+ 74. Port Connectivity Checks: "alu:alu_module|arithmetic_sub:a_sub|RCA32:sum"
+ 75. Port Connectivity Checks: "alu:alu_module|arithmetic_sub:a_sub"
+ 76. Port Connectivity Checks: "alu:alu_module|arithmetic_add:a_add|RCA32:sum"
+ 77. Port Connectivity Checks: "alu:alu_module|arithmetic_add:a_add"
+ 78. Port Connectivity Checks: "alu:alu_module|ar_shift_right:a_s_right"
+ 79. Port Connectivity Checks: "alu:alu_module|logical_not:l_not"
+ 80. Port Connectivity Checks: "alu:alu_module|logical_negate:l_neg"
+ 81. Port Connectivity Checks: "gen_regs:outport"
+ 82. Port Connectivity Checks: "gen_regs:r0"
+ 83. Port Connectivity Checks: "select_encoder:s_e"
+ 84. Port Connectivity Checks: "mar_reg:mar|gen_regs:mar_internal"
+ 85. Port Connectivity Checks: "encoder_32_5:output_mux"
+ 86. Elapsed Time Per Partition
+ 87. Analysis & Synthesis Messages
+ 88. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -118,15 +119,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Mar 24 17:48:10 2023           ;
+; Analysis & Synthesis Status        ; Successful - Fri Mar 24 23:19:16 2023           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; CPU-System                                      ;
 ; Top-level Entity Name              ; datapath                                        ;
 ; Family                             ; Cyclone III                                     ;
-; Total logic elements               ; 6,976                                           ;
-;     Total combinational functions  ; 6,347                                           ;
-;     Dedicated logic registers      ; 829                                             ;
-; Total registers                    ; 829                                             ;
+; Total logic elements               ; 7,009                                           ;
+;     Total combinational functions  ; 6,404                                           ;
+;     Dedicated logic registers      ; 861                                             ;
+; Total registers                    ; 861                                             ;
 ; Total pins                         ; 196                                             ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 16,384                                          ;
@@ -263,7 +264,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; altram.inc                           ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                      ;         ;
 ; altdpram.inc                         ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                    ;         ;
 ; db/altsyncram_v8i1.tdf               ; yes             ; Auto-Generated Megafunction                           ; C:/Users/ian/Documents/CPU-Design/CPU-System/db/altsyncram_v8i1.tdf               ;         ;
-; db/cpu-system.ram0_ram_1d0cf.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/ian/Documents/CPU-Design/CPU-System/db/cpu-system.ram0_ram_1d0cf.hdl.mif ;         ;
+; db/CPU-System.ram0_ram_1d0cf.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/ian/Documents/CPU-Design/CPU-System/db/CPU-System.ram0_ram_1d0cf.hdl.mif ;         ;
 ; lpm_add_sub.tdf                      ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_add_sub.tdf                 ;         ;
 ; addcore.inc                          ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/addcore.inc                     ;         ;
 ; look_add.inc                         ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/look_add.inc                    ;         ;
@@ -279,29 +280,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-------------------------+
 ; Resource                                    ; Usage                   ;
 +---------------------------------------------+-------------------------+
-; Estimated Total logic elements              ; 6,976                   ;
+; Estimated Total logic elements              ; 7,009                   ;
 ;                                             ;                         ;
-; Total combinational functions               ; 6347                    ;
+; Total combinational functions               ; 6404                    ;
 ; Logic element usage by number of LUT inputs ;                         ;
 ;     -- 4 input functions                    ; 3650                    ;
 ;     -- 3 input functions                    ; 2257                    ;
-;     -- <=2 input functions                  ; 440                     ;
+;     -- <=2 input functions                  ; 497                     ;
 ;                                             ;                         ;
 ; Logic elements by mode                      ;                         ;
-;     -- normal mode                          ; 4551                    ;
+;     -- normal mode                          ; 4608                    ;
 ;     -- arithmetic mode                      ; 1796                    ;
 ;                                             ;                         ;
-; Total registers                             ; 829                     ;
-;     -- Dedicated logic registers            ; 829                     ;
+; Total registers                             ; 861                     ;
+;     -- Dedicated logic registers            ; 861                     ;
 ;     -- I/O registers                        ; 0                       ;
 ;                                             ;                         ;
 ; I/O pins                                    ; 196                     ;
 ; Total memory bits                           ; 16384                   ;
 ; Embedded Multiplier 9-bit elements          ; 0                       ;
-; Maximum fan-out node                        ; bus_mux:BusMux|Mux30~31 ;
+; Maximum fan-out node                        ; bus_mux:BusMux|Mux23~31 ;
 ; Maximum fan-out                             ; 1517                    ;
-; Total fan-out                               ; 25425                   ;
-; Average fan-out                             ; 3.35                    ;
+; Total fan-out                               ; 25611                   ;
+; Average fan-out                             ; 3.33                    ;
 +---------------------------------------------+-------------------------+
 
 
@@ -310,8 +311,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                               ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------+--------------+
-; |datapath                                 ; 6347 (19)         ; 829 (0)      ; 16384       ; 0            ; 0       ; 0         ; 196  ; 0            ; |datapath                                                                                         ; work         ;
-;    |alu:alu_module|                       ; 5158 (180)        ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module                                                                          ; work         ;
+; |datapath                                 ; 6404 (19)         ; 861 (0)      ; 16384       ; 0            ; 0       ; 0         ; 196  ; 0            ; |datapath                                                                                         ; work         ;
+;    |alu:alu_module|                       ; 5158 (179)        ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module                                                                          ; work         ;
 ;       |arithmetic_add:a_add|              ; 57 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|arithmetic_add:a_add                                                     ; work         ;
 ;          |RCA32:sum|                      ; 57 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum                                           ; work         ;
 ;             |RCA16:RCA16_1|               ; 32 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1                             ; work         ;
@@ -496,15 +497,16 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                      |HA:HA_2|            ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4|HA:HA_2 ; work         ;
 ;       |logical_and:l_and|                 ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|logical_and:l_and                                                        ; work         ;
 ;       |logical_or:l_or|                   ; 24 (24)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|logical_or:l_or                                                          ; work         ;
-;       |rotate_left:rot_left|              ; 121 (121)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|rotate_left:rot_left                                                     ; work         ;
-;       |rotate_right:rot_right|            ; 137 (137)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|rotate_right:rot_right                                                   ; work         ;
-;       |shift_left:s_left|                 ; 112 (112)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|shift_left:s_left                                                        ; work         ;
+;       |rotate_left:rot_left|              ; 124 (124)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|rotate_left:rot_left                                                     ; work         ;
+;       |rotate_right:rot_right|            ; 134 (134)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|rotate_right:rot_right                                                   ; work         ;
+;       |shift_left:s_left|                 ; 113 (113)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|alu:alu_module|shift_left:s_left                                                        ; work         ;
 ;    |bus_mux:BusMux|                       ; 488 (488)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|bus_mux:BusMux                                                                          ; work         ;
 ;    |conff:control|                        ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|conff:control                                                                           ; work         ;
 ;    |encoder_32_5:output_mux|              ; 75 (75)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|encoder_32_5:output_mux                                                                 ; work         ;
-;    |gen_regs:hi|                          ; 3 (3)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:hi                                                                             ; work         ;
+;    |gen_regs:hi|                          ; 6 (6)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:hi                                                                             ; work         ;
+;    |gen_regs:inport|                      ; 33 (33)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:inport                                                                         ; work         ;
 ;    |gen_regs:ir|                          ; 6 (6)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:ir                                                                             ; work         ;
-;    |gen_regs:lo|                          ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:lo                                                                             ; work         ;
+;    |gen_regs:lo|                          ; 7 (7)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:lo                                                                             ; work         ;
 ;    |gen_regs:mdr|                         ; 33 (33)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:mdr                                                                            ; work         ;
 ;    |gen_regs:r0|                          ; 1 (1)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r0                                                                             ; work         ;
 ;    |gen_regs:r10|                         ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r10                                                                            ; work         ;
@@ -514,9 +516,9 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |gen_regs:r14|                         ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r14                                                                            ; work         ;
 ;    |gen_regs:r15|                         ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r15                                                                            ; work         ;
 ;    |gen_regs:r1|                          ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r1                                                                             ; work         ;
-;    |gen_regs:r2|                          ; 3 (3)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r2                                                                             ; work         ;
-;    |gen_regs:r3|                          ; 1 (1)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r3                                                                             ; work         ;
-;    |gen_regs:r4|                          ; 2 (2)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r4                                                                             ; work         ;
+;    |gen_regs:r2|                          ; 4 (4)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r2                                                                             ; work         ;
+;    |gen_regs:r3|                          ; 6 (6)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r3                                                                             ; work         ;
+;    |gen_regs:r4|                          ; 7 (7)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r4                                                                             ; work         ;
 ;    |gen_regs:r5|                          ; 2 (2)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r5                                                                             ; work         ;
 ;    |gen_regs:r6|                          ; 31 (31)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r6                                                                             ; work         ;
 ;    |gen_regs:r7|                          ; 2 (2)             ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|gen_regs:r7                                                                             ; work         ;
@@ -528,7 +530,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |mar_reg:mar|                          ; 1 (0)             ; 9 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mar_reg:mar                                                                             ; work         ;
 ;       |gen_regs:mar_internal|             ; 1 (1)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|mar_reg:mar|gen_regs:mar_internal                                                       ; work         ;
 ;    |pc_reg:pc|                            ; 33 (33)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|pc_reg:pc                                                                               ; work         ;
-;    |ram:ram_connection|                   ; 43 (43)           ; 83 (83)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ram:ram_connection                                                                      ; work         ;
+;    |ram:ram_connection|                   ; 47 (47)           ; 83 (83)      ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ram:ram_connection                                                                      ; work         ;
 ;       |altsyncram:ram_contents_rtl_0|     ; 0 (0)             ; 0 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ram:ram_connection|altsyncram:ram_contents_rtl_0                                        ; work         ;
 ;          |altsyncram_v8i1:auto_generated| ; 0 (0)             ; 0 (0)        ; 16384       ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|ram:ram_connection|altsyncram:ram_contents_rtl_0|altsyncram_v8i1:auto_generated         ; work         ;
 ;    |select_encoder:s_e|                   ; 35 (35)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |datapath|select_encoder:s_e                                                                      ; work         ;
@@ -564,12 +566,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 829   ;
+; Total registers                              ; 861   ;
 ; Number of registers using Synchronous Clear  ; 67    ;
 ; Number of registers using Synchronous Load   ; 63    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 753   ;
+; Number of registers using Clock Enable       ; 785   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -579,19 +581,46 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------------------+---------+
 ; Inverted Register                                ; Fan out ;
 +--------------------------------------------------+---------+
+; gen_regs:r4|q[0]                                 ; 1       ;
 ; gen_regs:r6|q[0]                                 ; 1       ;
+; gen_regs:hi|q[1]                                 ; 1       ;
+; gen_regs:inport|q[1]                             ; 1       ;
 ; gen_regs:r2|q[1]                                 ; 1       ;
-; gen_regs:hi|q[2]                                 ; 1       ;
-; gen_regs:hi|q[3]                                 ; 1       ;
-; gen_regs:r2|q[3]                                 ; 1       ;
+; gen_regs:r3|q[1]                                 ; 1       ;
+; gen_regs:r4|q[1]                                 ; 1       ;
+; gen_regs:lo|q[2]                                 ; 1       ;
+; gen_regs:inport|q[2]                             ; 1       ;
+; gen_regs:r2|q[2]                                 ; 1       ;
+; gen_regs:r4|q[2]                                 ; 1       ;
+; gen_regs:lo|q[3]                                 ; 1       ;
 ; gen_regs:r6|q[3]                                 ; 1       ;
+; gen_regs:hi|q[4]                                 ; 1       ;
+; gen_regs:lo|q[4]                                 ; 1       ;
+; gen_regs:inport|q[4]                             ; 1       ;
+; gen_regs:r3|q[4]                                 ; 1       ;
 ; gen_regs:r6|q[4]                                 ; 1       ;
+; gen_regs:lo|q[5]                                 ; 1       ;
+; gen_regs:r2|q[5]                                 ; 1       ;
+; gen_regs:r4|q[5]                                 ; 1       ;
 ; gen_regs:r6|q[5]                                 ; 1       ;
+; gen_regs:hi|q[6]                                 ; 1       ;
+; gen_regs:inport|q[6]                             ; 1       ;
+; gen_regs:r4|q[6]                                 ; 1       ;
 ; gen_regs:r6|q[6]                                 ; 1       ;
+; gen_regs:hi|q[7]                                 ; 1       ;
+; gen_regs:lo|q[7]                                 ; 1       ;
+; gen_regs:inport|q[7]                             ; 1       ;
 ; gen_regs:r6|q[7]                                 ; 1       ;
+; gen_regs:lo|q[8]                                 ; 1       ;
+; gen_regs:r3|q[8]                                 ; 1       ;
 ; gen_regs:r6|q[8]                                 ; 1       ;
+; gen_regs:r3|q[9]                                 ; 1       ;
 ; gen_regs:r6|q[9]                                 ; 1       ;
+; gen_regs:hi|q[10]                                ; 1       ;
+; gen_regs:inport|q[10]                            ; 1       ;
 ; gen_regs:r6|q[10]                                ; 1       ;
+; gen_regs:inport|q[11]                            ; 1       ;
+; gen_regs:r3|q[11]                                ; 1       ;
 ; gen_regs:r6|q[11]                                ; 1       ;
 ; gen_regs:r6|q[12]                                ; 1       ;
 ; gen_regs:r6|q[13]                                ; 1       ;
@@ -613,11 +642,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; gen_regs:r6|q[29]                                ; 1       ;
 ; gen_regs:r6|q[30]                                ; 1       ;
 ; gen_regs:r6|q[31]                                ; 1       ;
+; ram:ram_connection|ram_contents_rtl_0_bypass[19] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[20] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[22] ; 1       ;
+; ram:ram_connection|ram_contents_rtl_0_bypass[23] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[24] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[26] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[28] ; 1       ;
+; ram:ram_connection|ram_contents_rtl_0_bypass[29] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[30] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[32] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[34] ; 1       ;
@@ -632,26 +664,26 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; ram:ram_connection|ram_contents_rtl_0_bypass[52] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[54] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[56] ; 1       ;
+; ram:ram_connection|ram_contents_rtl_0_bypass[57] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[58] ; 1       ;
+; ram:ram_connection|ram_contents_rtl_0_bypass[59] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[60] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[62] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[64] ; 1       ;
-; ram:ram_connection|ram_contents_rtl_0_bypass[65] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[66] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[67] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[68] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[70] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[72] ; 1       ;
+; ram:ram_connection|ram_contents_rtl_0_bypass[73] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[74] ; 1       ;
-; ram:ram_connection|ram_contents_rtl_0_bypass[75] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[76] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[77] ; 1       ;
 ; ram:ram_connection|ram_contents_rtl_0_bypass[78] ; 1       ;
-; ram:ram_connection|ram_contents_rtl_0_bypass[80] ; 1       ;
-; ram:ram_connection|ram_contents_rtl_0_bypass[81] ; 1       ;
-; ram:ram_connection|ram_contents_rtl_0_bypass[82] ; 1       ;
-; Total number of inverted registers = 71          ;         ;
+; ram:ram_connection|ram_contents_rtl_0_bypass[79] ; 1       ;
+; Total number of inverted registers = 102*        ;         ;
 +--------------------------------------------------+---------+
+* Table truncated at 100 items. To change the number of inverted registers reported, set the "Number of Inverted Registers Reported" option under Assignments->Settings->Analysis and Synthesis Settings->More Settings
 
 
 +------------------------------------------------------------------------------------------+
@@ -760,43 +792,48 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------+
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:ir|q[27]                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r7|q[3]                                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r7|q[6]                                 ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |datapath|gen_regs:r6|q[2]                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r5|q[28]                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r4|q[0]                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r3|q[3]                                 ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |datapath|gen_regs:r2|q[5]                                 ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r1|q[17]                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r15|q[29]                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r14|q[4]                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r13|q[22]                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r12|q[12]                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r11|q[8]                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r10|q[10]                               ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r9|q[22]                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r8|q[30]                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|pc_reg:pc|pc_out[27]                             ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:lo|q[11]                                ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |datapath|gen_regs:hi|q[11]                                ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:y|q[2]                                  ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |datapath|mar_reg:mar|gen_regs:mar_internal|q[8]           ;
-; 35:1               ; 31 bits   ; 713 LEs       ; 62 LEs               ; 651 LEs                ; Yes        ; |datapath|gen_regs:zhi|q[5]                                ;
-; 37:1               ; 30 bits   ; 720 LEs       ; 300 LEs              ; 420 LEs                ; Yes        ; |datapath|gen_regs:zlo|q[22]                               ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |datapath|gen_regs:r6|q[0]                                 ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |datapath|gen_regs:r2|q[1]                                 ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |datapath|gen_regs:hi|q[3]                                 ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|alu:alu_module|arithmetic_mult:a_mult|Mux0       ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r5|q[5]                                 ;
+; 3:1                ; 27 bits   ; 54 LEs        ; 27 LEs               ; 27 LEs                 ; Yes        ; |datapath|gen_regs:r4|q[4]                                 ;
+; 3:1                ; 27 bits   ; 54 LEs        ; 27 LEs               ; 27 LEs                 ; Yes        ; |datapath|gen_regs:r3|q[27]                                ;
+; 3:1                ; 29 bits   ; 58 LEs        ; 29 LEs               ; 29 LEs                 ; Yes        ; |datapath|gen_regs:r2|q[29]                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r1|q[3]                                 ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r15|q[25]                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r14|q[3]                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r13|q[12]                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r12|q[28]                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r11|q[24]                               ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r10|q[4]                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r9|q[15]                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:r8|q[14]                                ;
+; 3:1                ; 25 bits   ; 50 LEs        ; 25 LEs               ; 25 LEs                 ; Yes        ; |datapath|gen_regs:inport|q[16]                            ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|pc_reg:pc|pc_out[16]                             ;
+; 3:1                ; 26 bits   ; 52 LEs        ; 26 LEs               ; 26 LEs                 ; Yes        ; |datapath|gen_regs:lo|q[9]                                 ;
+; 3:1                ; 27 bits   ; 54 LEs        ; 27 LEs               ; 27 LEs                 ; Yes        ; |datapath|gen_regs:hi|q[29]                                ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |datapath|gen_regs:y|q[19]                                 ;
+; 3:1                ; 9 bits    ; 18 LEs        ; 9 LEs                ; 9 LEs                  ; Yes        ; |datapath|mar_reg:mar|gen_regs:mar_internal|q[1]           ;
+; 35:1               ; 31 bits   ; 713 LEs       ; 62 LEs               ; 651 LEs                ; Yes        ; |datapath|gen_regs:zhi|q[27]                               ;
+; 37:1               ; 30 bits   ; 720 LEs       ; 300 LEs              ; 420 LEs                ; Yes        ; |datapath|gen_regs:zlo|q[24]                               ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |datapath|gen_regs:r6|q[30]                                ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |datapath|gen_regs:r4|q[0]                                 ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |datapath|gen_regs:r3|q[1]                                 ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |datapath|gen_regs:r2|q[1]                                 ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |datapath|gen_regs:inport|q[1]                             ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |datapath|gen_regs:lo|q[7]                                 ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |datapath|gen_regs:hi|q[10]                                ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |datapath|alu:alu_module|arithmetic_mult:a_mult|Mux1       ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_module|ShiftRight0                       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |datapath|select_encoder:s_e|decode[2]                     ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |datapath|alu:alu_module|rotate_right:rot_right|ShiftLeft0 ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |datapath|select_encoder:s_e|decode[0]                     ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |datapath|alu:alu_module|rotate_left:rot_left|ShiftRight0  ;
 ; 4:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_module|arithmetic_mult:a_mult|Mux27      ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_module|shift_left:s_left|ShiftLeft0      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_module|ShiftRight0                       ;
 ; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_module|rotate_right:rot_right|ShiftLeft0 ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_module|ShiftRight0                       ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_module|rotate_right:rot_right|ShiftLeft0 ;
-; 32:1               ; 16 bits   ; 336 LEs       ; 240 LEs              ; 96 LEs                 ; No         ; |datapath|bus_mux:BusMux|Mux30                             ;
-; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|alu:alu_module|arithmetic_mult:a_mult|Mux49      ;
-; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|alu:alu_module|arithmetic_mult:a_mult|Mux121     ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_module|shift_left:s_left|ShiftLeft0      ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_module|rotate_left:rot_left|ShiftRight0  ;
+; 32:1               ; 16 bits   ; 336 LEs       ; 240 LEs              ; 96 LEs                 ; No         ; |datapath|bus_mux:BusMux|Mux23                             ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|alu:alu_module|arithmetic_mult:a_mult|Mux59      ;
+; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|alu:alu_module|arithmetic_mult:a_mult|Mux105     ;
 ; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|alu:alu_module|arithmetic_mult:a_mult|Mux181     ;
 ; 6:1                ; 30 bits   ; 120 LEs       ; 90 LEs               ; 30 LEs                 ; No         ; |datapath|alu:alu_module|arithmetic_mult:a_mult|Mux248     ;
 ; 6:1                ; 8 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |datapath|alu:alu_module|rotate_left:rot_left|ShiftRight0  ;
@@ -859,7 +896,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; Parameter Name ; Value ; Type                            ;
 +----------------+-------+---------------------------------+
-; qInitial       ; 12    ; Signed Integer                  ;
+; qInitial       ; 1234  ; Signed Integer                  ;
 +----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -869,7 +906,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; Parameter Name ; Value ; Type                            ;
 +----------------+-------+---------------------------------+
-; qInitial       ; 0     ; Signed Integer                  ;
+; qInitial       ; 444   ; Signed Integer                  ;
 +----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -929,7 +966,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; Parameter Name ; Value ; Type                            ;
 +----------------+-------+---------------------------------+
-; qInitial       ; 10    ; Signed Integer                  ;
+; qInitial       ; 38    ; Signed Integer                  ;
 +----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -939,7 +976,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; Parameter Name ; Value ; Type                            ;
 +----------------+-------+---------------------------------+
-; qInitial       ; 0     ; Signed Integer                  ;
+; qInitial       ; 2834  ; Signed Integer                  ;
 +----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -949,7 +986,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------+
 ; Parameter Name ; Value ; Type                            ;
 +----------------+-------+---------------------------------+
-; qInitial       ; 0     ; Signed Integer                  ;
+; qInitial       ; 103   ; Signed Integer                  ;
 +----------------+-------+---------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1064,13 +1101,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: gen_regs:outportReg ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; qInitial       ; 0     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: gen_regs:inport ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; qInitial       ; 3286  ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: gen_regs:outport ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; qInitial       ; 0     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -2040,7 +2087,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "gen_regs:outportReg"                                                                ;
+; Port Connectivity Checks: "gen_regs:outport"                                                                   ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                             ;
 +------+--------+----------+-------------------------------------------------------------------------------------+
@@ -2099,7 +2146,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Mar 24 17:47:49 2023
+    Info: Processing started: Fri Mar 24 23:18:56 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU-System -c CPU-System
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 2 entities, in source file select_encoder.v
@@ -2174,8 +2221,12 @@ Warning (10235): Verilog HDL Always Construct warning at conff.v(19): variable "
 Info (12128): Elaborating entity "decoder_4_16" for hierarchy "conff:control|decoder_4_16:yup"
 Info (12128): Elaborating entity "pc_reg" for hierarchy "pc_reg:pc"
 Info (12128): Elaborating entity "gen_regs" for hierarchy "gen_regs:hi"
+Info (12128): Elaborating entity "gen_regs" for hierarchy "gen_regs:lo"
 Info (12128): Elaborating entity "gen_regs" for hierarchy "gen_regs:r2"
+Info (12128): Elaborating entity "gen_regs" for hierarchy "gen_regs:r3"
+Info (12128): Elaborating entity "gen_regs" for hierarchy "gen_regs:r4"
 Info (12128): Elaborating entity "gen_regs" for hierarchy "gen_regs:r6"
+Info (12128): Elaborating entity "gen_regs" for hierarchy "gen_regs:inport"
 Info (12128): Elaborating entity "alu" for hierarchy "alu:alu_module"
 Info (12128): Elaborating entity "logical_or" for hierarchy "alu:alu_module|logical_or:l_or"
 Info (12128): Elaborating entity "logical_and" for hierarchy "alu:alu_module|logical_and:l_and"
@@ -2289,10 +2340,9 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Users/ian/Documents/CPU-Design/CPU-System/output_files/CPU-System.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 67 input pin(s) that do not drive logic
+Warning (21074): Design contains 66 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "con_enable"
     Warning (15610): No output dependent on input pin "outport_enable"
-    Warning (15610): No output dependent on input pin "inport_enable"
     Warning (15610): No output dependent on input pin "data_in[0]"
     Warning (15610): No output dependent on input pin "data_in[1]"
     Warning (15610): No output dependent on input pin "data_in[2]"
@@ -2325,47 +2375,47 @@ Warning (21074): Design contains 67 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "data_in[29]"
     Warning (15610): No output dependent on input pin "data_in[30]"
     Warning (15610): No output dependent on input pin "data_in[31]"
-    Warning (15610): No output dependent on input pin "data_outport[0]"
-    Warning (15610): No output dependent on input pin "data_outport[1]"
-    Warning (15610): No output dependent on input pin "data_outport[2]"
-    Warning (15610): No output dependent on input pin "data_outport[3]"
-    Warning (15610): No output dependent on input pin "data_outport[4]"
-    Warning (15610): No output dependent on input pin "data_outport[5]"
-    Warning (15610): No output dependent on input pin "data_outport[6]"
-    Warning (15610): No output dependent on input pin "data_outport[7]"
-    Warning (15610): No output dependent on input pin "data_outport[8]"
-    Warning (15610): No output dependent on input pin "data_outport[9]"
-    Warning (15610): No output dependent on input pin "data_outport[10]"
-    Warning (15610): No output dependent on input pin "data_outport[11]"
-    Warning (15610): No output dependent on input pin "data_outport[12]"
-    Warning (15610): No output dependent on input pin "data_outport[13]"
-    Warning (15610): No output dependent on input pin "data_outport[14]"
-    Warning (15610): No output dependent on input pin "data_outport[15]"
-    Warning (15610): No output dependent on input pin "data_outport[16]"
-    Warning (15610): No output dependent on input pin "data_outport[17]"
-    Warning (15610): No output dependent on input pin "data_outport[18]"
-    Warning (15610): No output dependent on input pin "data_outport[19]"
-    Warning (15610): No output dependent on input pin "data_outport[20]"
-    Warning (15610): No output dependent on input pin "data_outport[21]"
-    Warning (15610): No output dependent on input pin "data_outport[22]"
-    Warning (15610): No output dependent on input pin "data_outport[23]"
-    Warning (15610): No output dependent on input pin "data_outport[24]"
-    Warning (15610): No output dependent on input pin "data_outport[25]"
-    Warning (15610): No output dependent on input pin "data_outport[26]"
-    Warning (15610): No output dependent on input pin "data_outport[27]"
-    Warning (15610): No output dependent on input pin "data_outport[28]"
-    Warning (15610): No output dependent on input pin "data_outport[29]"
-    Warning (15610): No output dependent on input pin "data_outport[30]"
-    Warning (15610): No output dependent on input pin "data_outport[31]"
-Info (21057): Implemented 7236 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "outport_data[0]"
+    Warning (15610): No output dependent on input pin "outport_data[1]"
+    Warning (15610): No output dependent on input pin "outport_data[2]"
+    Warning (15610): No output dependent on input pin "outport_data[3]"
+    Warning (15610): No output dependent on input pin "outport_data[4]"
+    Warning (15610): No output dependent on input pin "outport_data[5]"
+    Warning (15610): No output dependent on input pin "outport_data[6]"
+    Warning (15610): No output dependent on input pin "outport_data[7]"
+    Warning (15610): No output dependent on input pin "outport_data[8]"
+    Warning (15610): No output dependent on input pin "outport_data[9]"
+    Warning (15610): No output dependent on input pin "outport_data[10]"
+    Warning (15610): No output dependent on input pin "outport_data[11]"
+    Warning (15610): No output dependent on input pin "outport_data[12]"
+    Warning (15610): No output dependent on input pin "outport_data[13]"
+    Warning (15610): No output dependent on input pin "outport_data[14]"
+    Warning (15610): No output dependent on input pin "outport_data[15]"
+    Warning (15610): No output dependent on input pin "outport_data[16]"
+    Warning (15610): No output dependent on input pin "outport_data[17]"
+    Warning (15610): No output dependent on input pin "outport_data[18]"
+    Warning (15610): No output dependent on input pin "outport_data[19]"
+    Warning (15610): No output dependent on input pin "outport_data[20]"
+    Warning (15610): No output dependent on input pin "outport_data[21]"
+    Warning (15610): No output dependent on input pin "outport_data[22]"
+    Warning (15610): No output dependent on input pin "outport_data[23]"
+    Warning (15610): No output dependent on input pin "outport_data[24]"
+    Warning (15610): No output dependent on input pin "outport_data[25]"
+    Warning (15610): No output dependent on input pin "outport_data[26]"
+    Warning (15610): No output dependent on input pin "outport_data[27]"
+    Warning (15610): No output dependent on input pin "outport_data[28]"
+    Warning (15610): No output dependent on input pin "outport_data[29]"
+    Warning (15610): No output dependent on input pin "outport_data[30]"
+    Warning (15610): No output dependent on input pin "outport_data[31]"
+Info (21057): Implemented 7269 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 159 input pins
     Info (21059): Implemented 37 output pins
-    Info (21061): Implemented 7008 logic cells
+    Info (21061): Implemented 7041 logic cells
     Info (21064): Implemented 32 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 88 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 87 warnings
     Info: Peak virtual memory: 4631 megabytes
-    Info: Processing ended: Fri Mar 24 17:48:10 2023
-    Info: Elapsed time: 00:00:21
+    Info: Processing ended: Fri Mar 24 23:19:16 2023
+    Info: Elapsed time: 00:00:20
     Info: Total CPU time (on all processors): 00:00:20
 
 

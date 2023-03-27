@@ -173,11 +173,21 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1000 ns
-add wave -position end  sim:/datapath_tb/DUT/r3/q
-add wave -position end  sim:/datapath_tb/DUT/r3/d
-add wave -position end  sim:/datapath_tb/DUT/r3/en
-add wave -position end  sim:/datapath_tb/DUT/r3/clr
-add wave -position end  sim:/datapath_tb/DUT/r3/clk
+add wave -position 0  sim:/datapath_tb/DUT/r3/q
+add wave -position 1  sim:/datapath_tb/DUT/r3/d
+add wave -position 2  sim:/datapath_tb/DUT/r3/en
+add wave -position 3  sim:/datapath_tb/DUT/r3/clr
+add wave -position 4  sim:/datapath_tb/DUT/r3/clk
+add wave -position 5  sim:/datapath_tb/DUT/r2/q
+add wave -position 6  sim:/datapath_tb/DUT/r2/d
+add wave -position 7  sim:/datapath_tb/DUT/r2/en
+add wave -position 8  sim:/datapath_tb/DUT/r2/clr
+add wave -position 9  sim:/datapath_tb/DUT/r2/clk
+add wave -position 10  sim:/datapath_tb/DUT/ir/q
+add wave -position 11  sim:/datapath_tb/DUT/ir/d
+add wave -position 12  sim:/datapath_tb/DUT/ir/en
+add wave -position 13  sim:/datapath_tb/DUT/ir/clr
+add wave -position 14  sim:/datapath_tb/DUT/ir/clk
 restart
 run 1000ns
 do CPU-System_run_msim_rtl_verilog.do
@@ -351,10 +361,20 @@ do CPU-System_run_msim_rtl_verilog.do
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 1000 ns
-add wave -position end  sim:/datapath_tb/DUT/r3/q
-add wave -position end  sim:/datapath_tb/DUT/r3/d
-add wave -position end  sim:/datapath_tb/DUT/r3/en
-add wave -position end  sim:/datapath_tb/DUT/r3/clr
-add wave -position end  sim:/datapath_tb/DUT/r3/clk
+add wave -position 0  sim:/datapath_tb/DUT/r3/q
+add wave -position 1  sim:/datapath_tb/DUT/r3/d
+add wave -position 2  sim:/datapath_tb/DUT/r3/en
+add wave -position 3  sim:/datapath_tb/DUT/r3/clr
+add wave -position 4  sim:/datapath_tb/DUT/r3/clk
+add wave -position 5  sim:/datapath_tb/DUT/r2/q
+add wave -position 6  sim:/datapath_tb/DUT/r2/d
+add wave -position 7  sim:/datapath_tb/DUT/r2/en
+add wave -position 8  sim:/datapath_tb/DUT/r2/clr
+add wave -position 9  sim:/datapath_tb/DUT/r2/clk
+add wave -position 10  sim:/datapath_tb/DUT/ir/q
+add wave -position 11  sim:/datapath_tb/DUT/ir/d
+add wave -position 12  sim:/datapath_tb/DUT/ir/en
+add wave -position 13  sim:/datapath_tb/DUT/ir/clr
+add wave -position 14  sim:/datapath_tb/DUT/ir/clk
 restart
 run 1000ns

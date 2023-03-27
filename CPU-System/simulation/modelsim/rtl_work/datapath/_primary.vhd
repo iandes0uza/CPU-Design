@@ -35,8 +35,8 @@ entity datapath is
         reg_enable_out  : in     vl_logic_vector(15 downto 0);
         opcode          : out    vl_logic_vector(4 downto 0);
         data_in         : in     vl_logic_vector(31 downto 0);
-        data_inport     : in     vl_logic_vector(31 downto 0);
-        data_outport    : in     vl_logic_vector(31 downto 0);
+        inport_data     : in     vl_logic_vector(31 downto 0);
+        outport_data    : in     vl_logic_vector(31 downto 0);
         \bus\           : out    vl_logic_vector(31 downto 0);
         clr             : in     vl_logic;
         clk             : in     vl_logic

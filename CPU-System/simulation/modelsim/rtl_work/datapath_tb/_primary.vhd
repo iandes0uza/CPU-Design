@@ -15,8 +15,7 @@ entity datapath_tb is
         T3              : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi1, Hi0);
         T4              : vl_logic_vector(0 to 3) := (Hi1, Hi0, Hi1, Hi1);
         T5              : vl_logic_vector(0 to 3) := (Hi1, Hi1, Hi0, Hi0);
-        T6              : vl_logic_vector(0 to 3) := (Hi1, Hi1, Hi0, Hi1);
-        T7              : vl_logic_vector(0 to 3) := (Hi1, Hi1, Hi1, Hi0)
+        T6              : vl_logic_vector(0 to 3) := (Hi1, Hi1, Hi0, Hi1)
     );
     attribute mti_svvh_generic_type : integer;
     attribute mti_svvh_generic_type of Default : constant is 1;
@@ -33,5 +32,4 @@ entity datapath_tb is
     attribute mti_svvh_generic_type of T4 : constant is 1;
     attribute mti_svvh_generic_type of T5 : constant is 1;
     attribute mti_svvh_generic_type of T6 : constant is 1;
-    attribute mti_svvh_generic_type of T7 : constant is 1;
 end datapath_tb;
