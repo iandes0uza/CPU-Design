@@ -18,16 +18,19 @@ module control_unit(output reg gra, grb, grc, r_in, r_out, y_enable, pc_enable,
 			  md_T0 = 8'd22, md_T1 = 8'd23, md_T2 = 8'd24, md_T3 = 8'd25, //md_T4 = 8'd26,
 			  branch_T0 = 8'd27, branch_T1 = 8'd28, branch_T2 = 8'd29, branch_T3 = 8'd30,
 			  jump_T0 = 8'd31, jal_T0 = 8'd32, jal_T1 = 8'd33, in_T0 = 8'd34, out_T0 = 8'd35,
-			  mfhi_T0 = 8'd36, mflo_T0 = 8'd37;
+			  mfhi_T0 = 8'd36, mflo_T0 = 8'd37,
+			  halt_T0 = 8'd38,
+			  nop_T0 = 8'd39;
 			  
 			  
 
 	reg [7:0] state = T0;
-	always@(posedge clk, posedge rst)
+	always@(posedge clk, posedge rst, posedge stp)
 	begin
-		alu_control = ir[31:27];
 		if (rst)
 			state = r_s;
+		if (stp)
+			state = halt_T0;
 		else 
 		begin
 			case(state)
@@ -35,7 +38,7 @@ module control_unit(output reg gra, grb, grc, r_in, r_out, y_enable, pc_enable,
 				T0 		: #40 state = T1;
 				T1 		: #40 state = T2;
 				T2		: begin
-							case(alu_control)
+							case(ir[31:27])
 							
 								//Simulating ALU Control Sequence
 								5'b00000 : #40 state = load_T0; 	//LOAD
@@ -117,6 +120,10 @@ module control_unit(output reg gra, grb, grc, r_in, r_out, y_enable, pc_enable,
 				mfhi_T0		: #40 state = T0;
 				
 				mflo_T0		: #40 state = T0;
+				
+				halt_T0		: #40 state = T0;
+				
+				nop_T0		: #40 state = T0;
 				
 			endcase
 		end
@@ -295,6 +302,12 @@ module control_unit(output reg gra, grb, grc, r_in, r_out, y_enable, pc_enable,
 							mdr_out <= 0; ir_enable <= 0;
 							gra <= 1; r_in <= 1; lo_enable <= 1;
 							#40 gra <= 0; r_in <= 0; lo_enable <= 0;
+						end
+			nop_T0	: begin 	
+							mdr_out <= 0; ir_enable <= 0;
+						end
+			halt_T0	: begin 	
+							mdr_out <= 0; ir_enable <= 0; run <= 0;
 						end
 		endcase
 	end

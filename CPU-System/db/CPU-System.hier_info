@@ -1,166 +1,41 @@
-|datapath
-pc_out => pc_out.IN1
-zlo_out => zlo_out.IN1
-zhi_out => zhi_out.IN1
-mdr_out => mdr_out.IN1
-mdr_enable => mdr_enable.IN1
-mar_enable => mar_enable.IN1
-zlo_enable => zlo_enable.IN1
-zhi_enable => zhi_enable.IN1
-hi_enable => hi_enable.IN1
-lo_enable => lo_enable.IN1
-hi_out => hi_out.IN1
-lo_out => lo_out.IN1
-c_out => c_out.IN1
-ram_enable => ram_enable.IN1
-pc_enable => pc_enable.IN1
-ir_enable => ir_enable.IN1
-pc_increment => pc_increment.IN1
-con_enable => con_enable.IN1
-y_enable => y_enable.IN1
-mdr_read => mdr_read.IN1
-gra => gra.IN1
-grb => grb.IN1
-grc => grc.IN1
-ba_out => ba_out.IN1
-r_in => r_in.IN1
-r_out => r_out.IN1
-outport_enable => outport_enable.IN1
-inport_enable => inport_enable.IN1
-inport_out => inport_out.IN1
-reg_enable_in[0] => reg_in.DATAA
-reg_enable_in[1] => reg_in.DATAA
-reg_enable_in[2] => reg_in.DATAA
-reg_enable_in[3] => reg_in.DATAA
-reg_enable_in[4] => reg_in.DATAA
-reg_enable_in[5] => reg_in.DATAA
-reg_enable_in[6] => reg_in.DATAA
-reg_enable_in[7] => reg_in.DATAA
-reg_enable_in[8] => reg_in.DATAA
-reg_enable_in[9] => reg_in.DATAA
-reg_enable_in[10] => reg_in.DATAA
-reg_enable_in[11] => reg_in.DATAA
-reg_enable_in[12] => reg_in.DATAA
-reg_enable_in[13] => reg_in.DATAA
-reg_enable_in[14] => reg_in.DATAA
-reg_enable_in[15] => reg_in.DATAA
-reg_enable_out[0] => reg_out.DATAA
-reg_enable_out[1] => reg_out.DATAA
-reg_enable_out[2] => reg_out.DATAA
-reg_enable_out[3] => reg_out.DATAA
-reg_enable_out[4] => reg_out.DATAA
-reg_enable_out[5] => reg_out.DATAA
-reg_enable_out[6] => reg_out.DATAA
-reg_enable_out[7] => reg_out.DATAA
-reg_enable_out[8] => reg_out.DATAA
-reg_enable_out[9] => reg_out.DATAA
-reg_enable_out[10] => reg_out.DATAA
-reg_enable_out[11] => reg_out.DATAA
-reg_enable_out[12] => reg_out.DATAA
-reg_enable_out[13] => reg_out.DATAA
-reg_enable_out[14] => reg_out.DATAA
-reg_enable_out[15] => reg_out.DATAA
+|cpu
 opcode[0] <= opcode[0].DB_MAX_OUTPUT_PORT_TYPE
 opcode[1] <= opcode[1].DB_MAX_OUTPUT_PORT_TYPE
 opcode[2] <= opcode[2].DB_MAX_OUTPUT_PORT_TYPE
 opcode[3] <= opcode[3].DB_MAX_OUTPUT_PORT_TYPE
 opcode[4] <= opcode[4].DB_MAX_OUTPUT_PORT_TYPE
-data_in[0] => ~NO_FANOUT~
-data_in[1] => ~NO_FANOUT~
-data_in[2] => ~NO_FANOUT~
-data_in[3] => ~NO_FANOUT~
-data_in[4] => ~NO_FANOUT~
-data_in[5] => ~NO_FANOUT~
-data_in[6] => ~NO_FANOUT~
-data_in[7] => ~NO_FANOUT~
-data_in[8] => ~NO_FANOUT~
-data_in[9] => ~NO_FANOUT~
-data_in[10] => ~NO_FANOUT~
-data_in[11] => ~NO_FANOUT~
-data_in[12] => ~NO_FANOUT~
-data_in[13] => ~NO_FANOUT~
-data_in[14] => ~NO_FANOUT~
-data_in[15] => ~NO_FANOUT~
-data_in[16] => ~NO_FANOUT~
-data_in[17] => ~NO_FANOUT~
-data_in[18] => ~NO_FANOUT~
-data_in[19] => ~NO_FANOUT~
-data_in[20] => ~NO_FANOUT~
-data_in[21] => ~NO_FANOUT~
-data_in[22] => ~NO_FANOUT~
-data_in[23] => ~NO_FANOUT~
-data_in[24] => ~NO_FANOUT~
-data_in[25] => ~NO_FANOUT~
-data_in[26] => ~NO_FANOUT~
-data_in[27] => ~NO_FANOUT~
-data_in[28] => ~NO_FANOUT~
-data_in[29] => ~NO_FANOUT~
-data_in[30] => ~NO_FANOUT~
-data_in[31] => ~NO_FANOUT~
-inport_data[0] => inport_data[0].IN1
-inport_data[1] => inport_data[1].IN1
-inport_data[2] => inport_data[2].IN1
-inport_data[3] => inport_data[3].IN1
-inport_data[4] => inport_data[4].IN1
-inport_data[5] => inport_data[5].IN1
-inport_data[6] => inport_data[6].IN1
-inport_data[7] => inport_data[7].IN1
-inport_data[8] => inport_data[8].IN1
-inport_data[9] => inport_data[9].IN1
-inport_data[10] => inport_data[10].IN1
-inport_data[11] => inport_data[11].IN1
-inport_data[12] => inport_data[12].IN1
-inport_data[13] => inport_data[13].IN1
-inport_data[14] => inport_data[14].IN1
-inport_data[15] => inport_data[15].IN1
-inport_data[16] => inport_data[16].IN1
-inport_data[17] => inport_data[17].IN1
-inport_data[18] => inport_data[18].IN1
-inport_data[19] => inport_data[19].IN1
-inport_data[20] => inport_data[20].IN1
-inport_data[21] => inport_data[21].IN1
-inport_data[22] => inport_data[22].IN1
-inport_data[23] => inport_data[23].IN1
-inport_data[24] => inport_data[24].IN1
-inport_data[25] => inport_data[25].IN1
-inport_data[26] => inport_data[26].IN1
-inport_data[27] => inport_data[27].IN1
-inport_data[28] => inport_data[28].IN1
-inport_data[29] => inport_data[29].IN1
-inport_data[30] => inport_data[30].IN1
-inport_data[31] => inport_data[31].IN1
-outport_data[0] => outport_data[0].IN1
-outport_data[1] => outport_data[1].IN1
-outport_data[2] => outport_data[2].IN1
-outport_data[3] => outport_data[3].IN1
-outport_data[4] => outport_data[4].IN1
-outport_data[5] => outport_data[5].IN1
-outport_data[6] => outport_data[6].IN1
-outport_data[7] => outport_data[7].IN1
-outport_data[8] => outport_data[8].IN1
-outport_data[9] => outport_data[9].IN1
-outport_data[10] => outport_data[10].IN1
-outport_data[11] => outport_data[11].IN1
-outport_data[12] => outport_data[12].IN1
-outport_data[13] => outport_data[13].IN1
-outport_data[14] => outport_data[14].IN1
-outport_data[15] => outport_data[15].IN1
-outport_data[16] => outport_data[16].IN1
-outport_data[17] => outport_data[17].IN1
-outport_data[18] => outport_data[18].IN1
-outport_data[19] => outport_data[19].IN1
-outport_data[20] => outport_data[20].IN1
-outport_data[21] => outport_data[21].IN1
-outport_data[22] => outport_data[22].IN1
-outport_data[23] => outport_data[23].IN1
-outport_data[24] => outport_data[24].IN1
-outport_data[25] => outport_data[25].IN1
-outport_data[26] => outport_data[26].IN1
-outport_data[27] => outport_data[27].IN1
-outport_data[28] => outport_data[28].IN1
-outport_data[29] => outport_data[29].IN1
-outport_data[30] => outport_data[30].IN1
-outport_data[31] => outport_data[31].IN1
+outport_data[0] <= gen_regs:outport.port0
+outport_data[1] <= gen_regs:outport.port0
+outport_data[2] <= gen_regs:outport.port0
+outport_data[3] <= gen_regs:outport.port0
+outport_data[4] <= gen_regs:outport.port0
+outport_data[5] <= gen_regs:outport.port0
+outport_data[6] <= gen_regs:outport.port0
+outport_data[7] <= gen_regs:outport.port0
+outport_data[8] <= gen_regs:outport.port0
+outport_data[9] <= gen_regs:outport.port0
+outport_data[10] <= gen_regs:outport.port0
+outport_data[11] <= gen_regs:outport.port0
+outport_data[12] <= gen_regs:outport.port0
+outport_data[13] <= gen_regs:outport.port0
+outport_data[14] <= gen_regs:outport.port0
+outport_data[15] <= gen_regs:outport.port0
+outport_data[16] <= gen_regs:outport.port0
+outport_data[17] <= gen_regs:outport.port0
+outport_data[18] <= gen_regs:outport.port0
+outport_data[19] <= gen_regs:outport.port0
+outport_data[20] <= gen_regs:outport.port0
+outport_data[21] <= gen_regs:outport.port0
+outport_data[22] <= gen_regs:outport.port0
+outport_data[23] <= gen_regs:outport.port0
+outport_data[24] <= gen_regs:outport.port0
+outport_data[25] <= gen_regs:outport.port0
+outport_data[26] <= gen_regs:outport.port0
+outport_data[27] <= gen_regs:outport.port0
+outport_data[28] <= gen_regs:outport.port0
+outport_data[29] <= gen_regs:outport.port0
+outport_data[30] <= gen_regs:outport.port0
+outport_data[31] <= gen_regs:outport.port0
 bus[0] <= bus[0].DB_MAX_OUTPUT_PORT_TYPE
 bus[1] <= bus[1].DB_MAX_OUTPUT_PORT_TYPE
 bus[2] <= bus[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -193,11 +68,44 @@ bus[28] <= bus[28].DB_MAX_OUTPUT_PORT_TYPE
 bus[29] <= bus[29].DB_MAX_OUTPUT_PORT_TYPE
 bus[30] <= bus[30].DB_MAX_OUTPUT_PORT_TYPE
 bus[31] <= bus[31].DB_MAX_OUTPUT_PORT_TYPE
-clr => clr.IN26
-clk => clk.IN29
+inport_data[0] => inport_data[0].IN1
+inport_data[1] => inport_data[1].IN1
+inport_data[2] => inport_data[2].IN1
+inport_data[3] => inport_data[3].IN1
+inport_data[4] => inport_data[4].IN1
+inport_data[5] => inport_data[5].IN1
+inport_data[6] => inport_data[6].IN1
+inport_data[7] => inport_data[7].IN1
+inport_data[8] => inport_data[8].IN1
+inport_data[9] => inport_data[9].IN1
+inport_data[10] => inport_data[10].IN1
+inport_data[11] => inport_data[11].IN1
+inport_data[12] => inport_data[12].IN1
+inport_data[13] => inport_data[13].IN1
+inport_data[14] => inport_data[14].IN1
+inport_data[15] => inport_data[15].IN1
+inport_data[16] => inport_data[16].IN1
+inport_data[17] => inport_data[17].IN1
+inport_data[18] => inport_data[18].IN1
+inport_data[19] => inport_data[19].IN1
+inport_data[20] => inport_data[20].IN1
+inport_data[21] => inport_data[21].IN1
+inport_data[22] => inport_data[22].IN1
+inport_data[23] => inport_data[23].IN1
+inport_data[24] => inport_data[24].IN1
+inport_data[25] => inport_data[25].IN1
+inport_data[26] => inport_data[26].IN1
+inport_data[27] => inport_data[27].IN1
+inport_data[28] => inport_data[28].IN1
+inport_data[29] => inport_data[29].IN1
+inport_data[30] => inport_data[30].IN1
+inport_data[31] => inport_data[31].IN1
+clk => clk.IN30
+rst => rst.IN1
+stp => stp.IN1
 
 
-|datapath|encoder_32_5:output_mux
+|cpu|encoder_32_5:output_mux
 in[0] => Equal0.IN63
 in[0] => Equal1.IN63
 in[0] => Equal2.IN63
@@ -973,7 +881,7 @@ out[3] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 out[4] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|mux_2_1:mdrMUX
+|cpu|mux_2_1:mdrMUX
 out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
@@ -1104,7 +1012,7 @@ b[30] => out.DATAB
 b[31] => out.DATAB
 
 
-|datapath|gen_regs:mdr
+|cpu|gen_regs:mdr
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1267,7 +1175,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|mar_reg:mar
+|cpu|mar_reg:mar
 q[0] <= gen_regs:mar_internal.port0
 q[1] <= gen_regs:mar_internal.port0
 q[2] <= gen_regs:mar_internal.port0
@@ -1314,7 +1222,7 @@ clr => clr.IN1
 clk => clk.IN1
 
 
-|datapath|mar_reg:mar|gen_regs:mar_internal
+|cpu|mar_reg:mar|gen_regs:mar_internal
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1477,7 +1385,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|ram:ram_connection
+|cpu|ram:ram_connection
 ram_out[0] <= ram_contents.DATAOUT
 ram_out[1] <= ram_contents.DATAOUT1
 ram_out[2] <= ram_contents.DATAOUT2
@@ -1666,7 +1574,7 @@ clk => addr_reg[8].CLK
 clk => ram_contents.CLK0
 
 
-|datapath|select_encoder:s_e
+|cpu|select_encoder:s_e
 ir[0] => data_sign[0].DATAIN
 ir[1] => data_sign[1].DATAIN
 ir[2] => data_sign[2].DATAIN
@@ -1820,7 +1728,7 @@ decode[2] <= decode[2].DB_MAX_OUTPUT_PORT_TYPE
 decode[3] <= decode[3].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|select_encoder:s_e|encoder_4_16:s_enc
+|cpu|select_encoder:s_e|encoder_4_16:s_enc
 out[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1843,7 +1751,7 @@ in[2] => ShiftLeft0.IN18
 in[3] => ShiftLeft0.IN17
 
 
-|datapath|conff:control
+|cpu|conff:control
 con_out <= flag.DB_MAX_OUTPUT_PORT_TYPE
 c2_field[0] => c2_field[0].IN1
 c2_field[1] => c2_field[1].IN1
@@ -1884,7 +1792,7 @@ bus[31] => pos.IN1
 con_in => ~NO_FANOUT~
 
 
-|datapath|conff:control|decoder_4_16:yup
+|cpu|conff:control|decoder_4_16:yup
 decoder[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 decoder[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 decoder[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1893,7 +1801,7 @@ in[0] => Decoder0.IN1
 in[1] => Decoder0.IN0
 
 
-|datapath|pc_reg:pc
+|cpu|pc_reg:pc
 pc_out[0] <= pc_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pc_out[1] <= pc_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pc_out[2] <= pc_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -2058,7 +1966,7 @@ clk => pc_out[30]~reg0.CLK
 clk => pc_out[31]~reg0.CLK
 
 
-|datapath|gen_regs:y
+|cpu|gen_regs:y
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -2221,7 +2129,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:hi
+|cpu|gen_regs:hi
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -2384,7 +2292,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:lo
+|cpu|gen_regs:lo
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -2547,7 +2455,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:zlo
+|cpu|gen_regs:zlo
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -2710,7 +2618,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:zhi
+|cpu|gen_regs:zhi
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -2873,7 +2781,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:ir
+|cpu|gen_regs:ir
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -3036,7 +2944,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r0
+|cpu|gen_regs:r0
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -3199,7 +3107,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r1
+|cpu|gen_regs:r1
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -3362,7 +3270,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r2
+|cpu|gen_regs:r2
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -3525,7 +3433,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r3
+|cpu|gen_regs:r3
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -3688,7 +3596,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r4
+|cpu|gen_regs:r4
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -3851,7 +3759,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r5
+|cpu|gen_regs:r5
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -4014,7 +3922,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r6
+|cpu|gen_regs:r6
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -4177,7 +4085,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r7
+|cpu|gen_regs:r7
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -4340,7 +4248,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r8
+|cpu|gen_regs:r8
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -4503,7 +4411,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r9
+|cpu|gen_regs:r9
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -4666,7 +4574,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r10
+|cpu|gen_regs:r10
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -4829,7 +4737,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r11
+|cpu|gen_regs:r11
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -4992,7 +4900,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r12
+|cpu|gen_regs:r12
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -5155,7 +5063,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r13
+|cpu|gen_regs:r13
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -5318,7 +5226,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r14
+|cpu|gen_regs:r14
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -5481,7 +5389,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:r15
+|cpu|gen_regs:r15
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -5644,7 +5552,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:inport
+|cpu|gen_regs:inport
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -5807,7 +5715,7 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|gen_regs:outport
+|cpu|gen_regs:outport
 q[0] <= q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[1] <= q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 q[2] <= q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -5970,7 +5878,276 @@ clk => q[30]~reg0.CLK
 clk => q[31]~reg0.CLK
 
 
-|datapath|alu:alu_module
+|cpu|control_unit:controlUnit
+gra <= gra$latch.DB_MAX_OUTPUT_PORT_TYPE
+grb <= grb$latch.DB_MAX_OUTPUT_PORT_TYPE
+grc <= grc$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_in <= r_in$latch.DB_MAX_OUTPUT_PORT_TYPE
+r_out <= r_out$latch.DB_MAX_OUTPUT_PORT_TYPE
+y_enable <= y_enable$latch.DB_MAX_OUTPUT_PORT_TYPE
+pc_enable <= pc_enable$latch.DB_MAX_OUTPUT_PORT_TYPE
+mar_enable <= mar_enable$latch.DB_MAX_OUTPUT_PORT_TYPE
+mdr_enable <= mdr_enable$latch.DB_MAX_OUTPUT_PORT_TYPE
+mdr_out <= mdr_out$latch.DB_MAX_OUTPUT_PORT_TYPE
+ir_enable <= ir_enable$latch.DB_MAX_OUTPUT_PORT_TYPE
+mdr_read <= mdr_read$latch.DB_MAX_OUTPUT_PORT_TYPE
+hi_enable <= <GND>
+lo_enable <= lo_enable$latch.DB_MAX_OUTPUT_PORT_TYPE
+zhi_enable <= zhi_enable$latch.DB_MAX_OUTPUT_PORT_TYPE
+zlo_enable <= zlo_enable$latch.DB_MAX_OUTPUT_PORT_TYPE
+inc_pc <= inc_pc$latch.DB_MAX_OUTPUT_PORT_TYPE
+con_enable <= con_enable$latch.DB_MAX_OUTPUT_PORT_TYPE
+ram_enable <= ram_enable$latch.DB_MAX_OUTPUT_PORT_TYPE
+inport_enable <= <GND>
+outport_enable <= <GND>
+inport_out <= <GND>
+pc_out <= pc_out$latch.DB_MAX_OUTPUT_PORT_TYPE
+y_out <= <GND>
+zlo_out <= zlo_out$latch.DB_MAX_OUTPUT_PORT_TYPE
+zhi_out <= <GND>
+lo_out <= <GND>
+hi_out <= <GND>
+ba_out <= ba_out$latch.DB_MAX_OUTPUT_PORT_TYPE
+c_out <= c_out$latch.DB_MAX_OUTPUT_PORT_TYPE
+run <= run$latch.DB_MAX_OUTPUT_PORT_TYPE
+reg_enable[0] <= <GND>
+reg_enable[1] <= <GND>
+reg_enable[2] <= <GND>
+reg_enable[3] <= <GND>
+reg_enable[4] <= <GND>
+reg_enable[5] <= <GND>
+reg_enable[6] <= <GND>
+reg_enable[7] <= <GND>
+reg_enable[8] <= <GND>
+reg_enable[9] <= <GND>
+reg_enable[10] <= <GND>
+reg_enable[11] <= <GND>
+reg_enable[12] <= <GND>
+reg_enable[13] <= <GND>
+reg_enable[14] <= <GND>
+reg_enable[15] <= reg_enable[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+ir[0] => ~NO_FANOUT~
+ir[1] => ~NO_FANOUT~
+ir[2] => ~NO_FANOUT~
+ir[3] => ~NO_FANOUT~
+ir[4] => ~NO_FANOUT~
+ir[5] => ~NO_FANOUT~
+ir[6] => ~NO_FANOUT~
+ir[7] => ~NO_FANOUT~
+ir[8] => ~NO_FANOUT~
+ir[9] => ~NO_FANOUT~
+ir[10] => ~NO_FANOUT~
+ir[11] => ~NO_FANOUT~
+ir[12] => ~NO_FANOUT~
+ir[13] => ~NO_FANOUT~
+ir[14] => ~NO_FANOUT~
+ir[15] => ~NO_FANOUT~
+ir[16] => ~NO_FANOUT~
+ir[17] => ~NO_FANOUT~
+ir[18] => ~NO_FANOUT~
+ir[19] => ~NO_FANOUT~
+ir[20] => ~NO_FANOUT~
+ir[21] => ~NO_FANOUT~
+ir[22] => ~NO_FANOUT~
+ir[23] => ~NO_FANOUT~
+ir[24] => ~NO_FANOUT~
+ir[25] => ~NO_FANOUT~
+ir[26] => ~NO_FANOUT~
+ir[27] => Mux15.IN36
+ir[27] => Mux14.IN36
+ir[27] => Mux16.IN32
+ir[27] => Mux13.IN36
+ir[27] => Mux12.IN36
+ir[27] => Mux11.IN36
+ir[27] => Mux10.IN36
+ir[27] => Mux9.IN36
+ir[27] => Mux8.IN36
+ir[27] => Mux7.IN36
+ir[27] => Mux6.IN36
+ir[27] => Mux5.IN36
+ir[27] => Mux4.IN36
+ir[27] => Mux3.IN36
+ir[27] => Mux2.IN36
+ir[27] => Mux1.IN36
+ir[27] => Mux0.IN36
+ir[28] => Mux15.IN35
+ir[28] => Mux14.IN35
+ir[28] => Mux16.IN31
+ir[28] => Mux13.IN35
+ir[28] => Mux12.IN35
+ir[28] => Mux11.IN35
+ir[28] => Mux10.IN35
+ir[28] => Mux9.IN35
+ir[28] => Mux8.IN35
+ir[28] => Mux7.IN35
+ir[28] => Mux6.IN35
+ir[28] => Mux5.IN35
+ir[28] => Mux4.IN35
+ir[28] => Mux3.IN35
+ir[28] => Mux2.IN35
+ir[28] => Mux1.IN35
+ir[28] => Mux0.IN35
+ir[29] => Decoder0.IN2
+ir[29] => Mux15.IN34
+ir[29] => Mux14.IN34
+ir[29] => Mux16.IN30
+ir[29] => Mux13.IN34
+ir[29] => Mux12.IN34
+ir[29] => Mux11.IN34
+ir[29] => Mux10.IN34
+ir[29] => Mux9.IN34
+ir[29] => Mux8.IN34
+ir[29] => Mux7.IN34
+ir[29] => Mux6.IN34
+ir[29] => Mux5.IN34
+ir[29] => Mux4.IN34
+ir[29] => Mux3.IN34
+ir[29] => Mux2.IN34
+ir[29] => Mux1.IN34
+ir[29] => Mux0.IN34
+ir[30] => Decoder0.IN1
+ir[30] => Mux15.IN33
+ir[30] => Mux14.IN33
+ir[30] => Mux16.IN29
+ir[30] => Mux13.IN33
+ir[30] => Mux12.IN33
+ir[30] => Mux11.IN33
+ir[30] => Mux10.IN33
+ir[30] => Mux9.IN33
+ir[30] => Mux8.IN33
+ir[30] => Mux7.IN33
+ir[30] => Mux6.IN33
+ir[30] => Mux5.IN33
+ir[30] => Mux4.IN33
+ir[30] => Mux3.IN33
+ir[30] => Mux2.IN33
+ir[30] => Mux1.IN33
+ir[30] => Mux0.IN33
+ir[31] => Decoder0.IN0
+ir[31] => Mux15.IN32
+ir[31] => Mux14.IN32
+ir[31] => Mux16.IN28
+ir[31] => Mux13.IN32
+ir[31] => Mux12.IN32
+ir[31] => Mux11.IN32
+ir[31] => Mux10.IN32
+ir[31] => Mux9.IN32
+ir[31] => Mux8.IN32
+ir[31] => Mux7.IN32
+ir[31] => Mux6.IN32
+ir[31] => Mux5.IN32
+ir[31] => Mux4.IN32
+ir[31] => Mux3.IN32
+ir[31] => Mux2.IN32
+ir[31] => Mux1.IN32
+ir[31] => Mux0.IN32
+clk => ~NO_FANOUT~
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.OUTPUTSELECT
+rst => state.r_s.IN1
+rst => Selector49.IN5
+rst => Mux16.IN33
+rst => Mux16.IN34
+rst => Mux16.IN35
+rst => Mux16.IN36
+rst => Selector52.IN5
+rst => Selector58.IN7
+rst => Selector62.IN7
+rst => Selector64.IN7
+rst => Selector66.IN7
+rst => Selector69.IN7
+rst => Selector71.IN7
+rst => Selector74.IN7
+rst => Selector76.IN7
+rst => Selector79.IN7
+rst => Selector81.IN7
+rst => Selector84.IN7
+rst => Selector87.IN7
+rst => Selector89.IN7
+rst => Selector91.IN7
+rst => Selector94.IN7
+rst => Selector96.IN7
+rst => Selector99.IN7
+rst => Selector101.IN7
+rst => Selector104.IN7
+rst => Selector106.IN7
+rst => Selector108.IN7
+stp => state.r_s_1038.ACLR
+stp => state.nop_T0_1048.ACLR
+stp => state.halt_T0_1058.PRESET
+stp => state.mflo_T0_1068.ACLR
+stp => state.mfhi_T0_1078.ACLR
+stp => state.out_T0_1088.ACLR
+stp => state.in_T0_1098.ACLR
+stp => state.jal_T1_1108.ACLR
+stp => state.jal_T0_1118.ACLR
+stp => state.jump_T0_1128.ACLR
+stp => state.branch_T3_1138.ACLR
+stp => state.branch_T2_1148.ACLR
+stp => state.branch_T1_1158.ACLR
+stp => state.branch_T0_1168.ACLR
+stp => state.md_T2_1188.ACLR
+stp => state.md_T1_1198.ACLR
+stp => state.md_T0_1208.ACLR
+stp => state.imm_T2_1218.ACLR
+stp => state.imm_T1_1228.ACLR
+stp => state.imm_T0_1238.ACLR
+stp => state.alu3_T2_1248.ACLR
+stp => state.alu3_T1_1258.ACLR
+stp => state.alu3_T0_1268.ACLR
+stp => state.alu2_T1_1278.ACLR
+stp => state.alu2_T0_1288.ACLR
+stp => state.store_T3_1298.ACLR
+stp => state.store_T2_1308.ACLR
+stp => state.store_T1_1318.ACLR
+stp => state.store_T0_1328.ACLR
+stp => state.loadi_T2_1338.ACLR
+stp => state.loadi_T1_1348.ACLR
+stp => state.loadi_T0_1358.ACLR
+stp => state.load_T2_1368.ACLR
+stp => state.load_T1_1378.ACLR
+stp => state.load_T0_1388.ACLR
+stp => state.T2_1398.ACLR
+stp => state.T1_1408.ACLR
+stp => state.T0_1418.ACLR
+
+
+|cpu|alu:alu_module
 in_A[0] => in_A[0].IN13
 in_A[1] => in_A[1].IN13
 in_A[2] => in_A[2].IN13
@@ -6454,7 +6631,7 @@ bf => out.OUTPUTSELECT
 clk => ~NO_FANOUT~
 
 
-|datapath|alu:alu_module|logical_or:l_or
+|cpu|alu:alu_module|logical_or:l_or
 a[0] => result.IN0
 a[1] => result.IN0
 a[2] => result.IN0
@@ -6553,7 +6730,7 @@ result[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu:alu_module|logical_and:l_and
+|cpu|alu:alu_module|logical_and:l_and
 a[0] => result.IN0
 a[1] => result.IN0
 a[2] => result.IN0
@@ -6652,7 +6829,7 @@ result[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu:alu_module|logical_negate:l_neg
+|cpu|alu:alu_module|logical_negate:l_neg
 a[0] => Add0.IN64
 a[1] => Add0.IN63
 a[2] => Add0.IN62
@@ -6719,7 +6896,7 @@ result[30] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu:alu_module|logical_not:l_not
+|cpu|alu:alu_module|logical_not:l_not
 a[0] => result[0].DATAIN
 a[1] => result[1].DATAIN
 a[2] => result[2].DATAIN
@@ -6786,7 +6963,7 @@ result[30] <= a[30].DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= a[31].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu:alu_module|shift_left:s_left
+|cpu|alu:alu_module|shift_left:s_left
 a[0] => ShiftLeft0.IN32
 a[1] => ShiftLeft0.IN31
 a[2] => ShiftLeft0.IN30
@@ -6885,7 +7062,7 @@ result[30] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu:alu_module|shift_right:s_right
+|cpu|alu:alu_module|shift_right:s_right
 a[0] => ShiftRight0.IN32
 a[1] => ShiftRight0.IN31
 a[2] => ShiftRight0.IN30
@@ -6984,7 +7161,7 @@ result[30] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu:alu_module|ar_shift_right:a_s_right
+|cpu|alu:alu_module|ar_shift_right:a_s_right
 a[0] => ShiftRight0.IN32
 a[1] => ShiftRight0.IN31
 a[2] => ShiftRight0.IN30
@@ -7083,7 +7260,7 @@ result[30] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= ShiftRight0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu:alu_module|rotate_left:rot_left
+|cpu|alu:alu_module|rotate_left:rot_left
 a[0] => ShiftLeft0.IN33
 a[0] => ShiftRight0.IN39
 a[1] => ShiftLeft0.IN32
@@ -7192,7 +7369,7 @@ result[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu:alu_module|rotate_right:rot_right
+|cpu|alu:alu_module|rotate_right:rot_right
 a[0] => ShiftRight0.IN33
 a[0] => ShiftLeft0.IN39
 a[1] => ShiftRight0.IN32
@@ -7301,7 +7478,7 @@ result[30] <= result.DB_MAX_OUTPUT_PORT_TYPE
 result[31] <= result.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add
+|cpu|alu:alu_module|arithmetic_add:a_add
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -7401,7 +7578,7 @@ result[30] <= RCA32:sum.port1
 result[31] <= RCA32:sum.port1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum
 c_out <= RCA16:RCA16_2.port0
 sum[0] <= RCA16:RCA16_1.port1
 sum[1] <= RCA16:RCA16_1.port1
@@ -7502,7 +7679,7 @@ b[31] => b[31].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1
 c_out <= RCA4:RCA4_4.port0
 sum[0] <= RCA4:RCA4_1.port1
 sum[1] <= RCA4:RCA4_1.port1
@@ -7555,7 +7732,7 @@ b[15] => b[15].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -7572,7 +7749,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7580,7 +7757,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7589,7 +7766,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7598,7 +7775,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7606,7 +7783,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7615,7 +7792,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7624,7 +7801,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7632,7 +7809,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7641,7 +7818,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7650,7 +7827,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7658,7 +7835,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7667,7 +7844,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7676,7 +7853,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -7693,7 +7870,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7701,7 +7878,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7710,7 +7887,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7719,7 +7896,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7727,7 +7904,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7736,7 +7913,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7745,7 +7922,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7753,7 +7930,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7762,7 +7939,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7771,7 +7948,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7779,7 +7956,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7788,7 +7965,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7797,7 +7974,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -7814,7 +7991,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7822,7 +7999,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7831,7 +8008,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7840,7 +8017,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7848,7 +8025,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7857,7 +8034,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7866,7 +8043,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7874,7 +8051,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7883,7 +8060,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7892,7 +8069,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7900,7 +8077,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7909,7 +8086,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7918,7 +8095,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -7935,7 +8112,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7943,7 +8120,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7952,7 +8129,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7961,7 +8138,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7969,7 +8146,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7978,7 +8155,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -7987,7 +8164,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -7995,7 +8172,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8004,7 +8181,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8013,7 +8190,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8021,7 +8198,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8030,7 +8207,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8039,7 +8216,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2
 c_out <= RCA4:RCA4_4.port0
 sum[0] <= RCA4:RCA4_1.port1
 sum[1] <= RCA4:RCA4_1.port1
@@ -8092,7 +8269,7 @@ b[15] => b[15].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -8109,7 +8286,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8117,7 +8294,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8126,7 +8303,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8135,7 +8312,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8143,7 +8320,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8152,7 +8329,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8161,7 +8338,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8169,7 +8346,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8178,7 +8355,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8187,7 +8364,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8195,7 +8372,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8204,7 +8381,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8213,7 +8390,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -8230,7 +8407,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8238,7 +8415,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8247,7 +8424,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8256,7 +8433,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8264,7 +8441,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8273,7 +8450,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8282,7 +8459,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8290,7 +8467,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8299,7 +8476,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8308,7 +8485,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8316,7 +8493,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8325,7 +8502,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8334,7 +8511,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -8351,7 +8528,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8359,7 +8536,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8368,7 +8545,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8377,7 +8554,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8385,7 +8562,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8394,7 +8571,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8403,7 +8580,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8411,7 +8588,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8420,7 +8597,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8429,7 +8606,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8437,7 +8614,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8446,7 +8623,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8455,7 +8632,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -8472,7 +8649,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8480,7 +8657,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8489,7 +8666,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8498,7 +8675,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8506,7 +8683,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8515,7 +8692,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8524,7 +8701,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8532,7 +8709,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8541,7 +8718,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8550,7 +8727,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8558,7 +8735,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8567,7 +8744,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_add:a_add|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8576,7 +8753,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub
+|cpu|alu:alu_module|arithmetic_sub:a_sub
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -8676,7 +8853,7 @@ result[30] <= RCA32:sum.port1
 result[31] <= RCA32:sum.port1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum
 c_out <= RCA16:RCA16_2.port0
 sum[0] <= RCA16:RCA16_1.port1
 sum[1] <= RCA16:RCA16_1.port1
@@ -8777,7 +8954,7 @@ b[31] => b[31].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1
 c_out <= RCA4:RCA4_4.port0
 sum[0] <= RCA4:RCA4_1.port1
 sum[1] <= RCA4:RCA4_1.port1
@@ -8830,7 +9007,7 @@ b[15] => b[15].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -8847,7 +9024,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8855,7 +9032,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8864,7 +9041,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8873,7 +9050,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8881,7 +9058,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8890,7 +9067,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8899,7 +9076,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8907,7 +9084,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8916,7 +9093,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8925,7 +9102,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8933,7 +9110,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8942,7 +9119,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_1|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8951,7 +9128,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -8968,7 +9145,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -8976,7 +9153,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8985,7 +9162,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -8994,7 +9171,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9002,7 +9179,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9011,7 +9188,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9020,7 +9197,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9028,7 +9205,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9037,7 +9214,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9046,7 +9223,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9054,7 +9231,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9063,7 +9240,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_2|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9072,7 +9249,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -9089,7 +9266,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9097,7 +9274,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9106,7 +9283,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9115,7 +9292,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9123,7 +9300,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9132,7 +9309,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9141,7 +9318,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9149,7 +9326,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9158,7 +9335,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9167,7 +9344,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9175,7 +9352,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9184,7 +9361,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_3|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9193,7 +9370,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -9210,7 +9387,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9218,7 +9395,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9227,7 +9404,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9236,7 +9413,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9244,7 +9421,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9253,7 +9430,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9262,7 +9439,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9270,7 +9447,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9279,7 +9456,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9288,7 +9465,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9296,7 +9473,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9305,7 +9482,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_1|RCA4:RCA4_4|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9314,7 +9491,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2
 c_out <= RCA4:RCA4_4.port0
 sum[0] <= RCA4:RCA4_1.port1
 sum[1] <= RCA4:RCA4_1.port1
@@ -9367,7 +9544,7 @@ b[15] => b[15].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -9384,7 +9561,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9392,7 +9569,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9401,7 +9578,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9410,7 +9587,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9418,7 +9595,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9427,7 +9604,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9436,7 +9613,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9444,7 +9621,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9453,7 +9630,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9462,7 +9639,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9470,7 +9647,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9479,7 +9656,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_1|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9488,7 +9665,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -9505,7 +9682,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9513,7 +9690,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9522,7 +9699,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9531,7 +9708,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9539,7 +9716,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9548,7 +9725,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9557,7 +9734,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9565,7 +9742,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9574,7 +9751,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9583,7 +9760,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9591,7 +9768,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9600,7 +9777,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_2|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9609,7 +9786,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -9626,7 +9803,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9634,7 +9811,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9643,7 +9820,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9652,7 +9829,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9660,7 +9837,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9669,7 +9846,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9678,7 +9855,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9686,7 +9863,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9695,7 +9872,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9704,7 +9881,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9712,7 +9889,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9721,7 +9898,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_3|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9730,7 +9907,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4
 c_out <= FA:FA_4.port0
 sum[0] <= FA:FA_1.port1
 sum[1] <= FA:FA_2.port1
@@ -9747,7 +9924,7 @@ b[3] => b[3].IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9755,7 +9932,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9764,7 +9941,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_1|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9773,7 +9950,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9781,7 +9958,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9790,7 +9967,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_2|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9799,7 +9976,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9807,7 +9984,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9816,7 +9993,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_3|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9825,7 +10002,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= HA:HA_2.port1
 a => a.IN1
@@ -9833,7 +10010,7 @@ b => b.IN1
 c_in => c_in.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4|HA:HA_1
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4|HA:HA_1
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9842,7 +10019,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4|HA:HA_2
+|cpu|alu:alu_module|arithmetic_sub:a_sub|RCA32:sum|RCA16:RCA16_2|RCA4:RCA4_4|FA:FA_4|HA:HA_2
 c_out <= comb.DB_MAX_OUTPUT_PORT_TYPE
 sum <= comb.DB_MAX_OUTPUT_PORT_TYPE
 a => comb.IN0
@@ -9851,7 +10028,7 @@ b => comb.IN1
 b => comb.IN1
 
 
-|datapath|alu:alu_module|arithmetic_mult:a_mult
+|cpu|alu:alu_module|arithmetic_mult:a_mult
 m[0] => Mux64.IN4
 m[0] => Mux65.IN4
 m[0] => Mux65.IN5
@@ -13005,7 +13182,7 @@ out[62] <= Add15.DB_MAX_OUTPUT_PORT_TYPE
 out[63] <= Add15.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|alu:alu_module|arithmetic_div:a_div
+|cpu|alu:alu_module|arithmetic_div:a_div
 in_a[0] => abs_a[0].DATAA
 in_a[0] => Add0.IN34
 in_a[1] => abs_a[1].DATAA
@@ -15247,7 +15424,7 @@ result[62] <= A.DB_MAX_OUTPUT_PORT_TYPE
 result[63] <= A.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|datapath|bus_mux:BusMux
+|cpu|bus_mux:BusMux
 out[0] <= Mux31.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= Mux30.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= Mux29.DB_MAX_OUTPUT_PORT_TYPE

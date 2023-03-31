@@ -1,12 +1,8 @@
 `timescale 1ns/10ps
-module datapath(input pc_out, zlo_out, zhi_out, mdr_out, mdr_enable, mar_enable, zlo_enable, zhi_enable, 
-							 hi_enable, lo_enable, hi_out, lo_out, c_out, ram_enable, pc_enable, ir_enable, pc_increment, con_enable,
-							 y_enable, mdr_read, gra, grb, grc, ba_out, r_in, r_out, outport_enable, inport_enable, inport_out,
-					 input [15:0] reg_enable_in, reg_enable_out,
-					 output [4:0] opcode,
-					 input [31:0] data_in, inport_data, outport_data, 
-					 output [31:0] bus,
-					 input clr, clk);
+module cpu(output [4:0] opcode,
+					 output wire [31:0] outport_data, bus,
+					 input wire [31:0] inport_data,
+					 input clk, rst, stp);
 
 	//General Purpose Connections - BUS CONNECTION
 	wire [31:0] data_r0, data_r1, data_r2, data_r3, data_r4, data_r5, data_r6, data_r7, 
@@ -14,7 +10,7 @@ module datapath(input pc_out, zlo_out, zhi_out, mdr_out, mdr_enable, mar_enable,
 					data_r15, data_pc, data_y, data_hi, data_lo, data_zlo, data_zhi, data_ir, data_sign, data_mdr, data_ram;
    
 	//Required RAM Connections	
-	wire [15:0] reg_in_IR, reg_out_IR;
+	wire [15:0] reg_in_IR, reg_out_IR, reg_enable_in;
 	reg [15:0] reg_in, reg_out;
 	
 	always@(*)
@@ -26,7 +22,7 @@ module datapath(input pc_out, zlo_out, zhi_out, mdr_out, mdr_enable, mar_enable,
 		if(reg_out_IR)
 			reg_out <= reg_out_IR; 
 		else 
-			reg_out <= reg_enable_out;
+			reg_out <= 0;
 	end 
 	
 	//Bus Selection Module
@@ -91,6 +87,11 @@ module datapath(input pc_out, zlo_out, zhi_out, mdr_out, mdr_enable, mar_enable,
 	gen_regs #(3286)inport(data_inport, inport_data, inport_enable, clr, clk);
 	gen_regs outport(outport_data, bus, outport_enable, clr, clk);
 
+	//CPU Control Unit Module
+	control_unit controlUnit(gra, grb, grc, r_in, r_out, y_enable, pc_enable, mar_enable, mdr_enable, mdr_out,
+									 ir_enable, mdr_read, hi_enable, lo_enable, zhi_enable, zlo_enable, pc_increment, con_enable,
+									 ram_enable, inport_enable, outport_enable, inport_out, pc_out, y_out, zlo_out, zhi_out,
+									 lo_out, hi_out, ba_out, c_out, run, reg_enable_in, data_ir, clk, rst, stp);
 	//ALU Module
 	alu alu_module(data_y, bus, opcode, c[63:0], con_out, clk);
 	
