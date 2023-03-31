@@ -10,6 +10,18 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/cpu.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/control_unit.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
 # vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/select_encoder.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module select_encoder
@@ -71,12 +83,6 @@
 # 
 # Top level modules:
 # 	encoder_32_5
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/datapath.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	datapath
 # vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/bus_mux.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module bus_mux
@@ -125,17 +131,17 @@
 # Top level modules:
 # 	ram
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/datapath_tb.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/p3_tb.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module datapath_tb
+# -- Compiling module p3_tb
 # 
 # Top level modules:
-# 	datapath_tb
+# 	p3_tb
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  datapath_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps datapath_tb 
-# Loading work.datapath_tb
-# Loading work.datapath
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  p3_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps p3_tb 
+# Loading work.p3_tb
+# Loading work.cpu
 # Loading work.encoder_32_5
 # Loading work.mux_2_1
 # Loading work.gen_regs
@@ -146,6 +152,7 @@
 # Loading work.conff
 # Loading work.decoder_4_16
 # Loading work.pc_reg
+# Loading work.control_unit
 # Loading work.alu
 # Loading work.logical_or
 # Loading work.logical_and
@@ -172,209 +179,32 @@
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 1000 ns
-add wave -position 0  sim:/datapath_tb/DUT/r3/q
-add wave -position 1  sim:/datapath_tb/DUT/r3/d
-add wave -position 2  sim:/datapath_tb/DUT/r3/en
-add wave -position 3  sim:/datapath_tb/DUT/r3/clr
-add wave -position 4  sim:/datapath_tb/DUT/r3/clk
-add wave -position 5  sim:/datapath_tb/DUT/r2/q
-add wave -position 6  sim:/datapath_tb/DUT/r2/d
-add wave -position 7  sim:/datapath_tb/DUT/r2/en
-add wave -position 8  sim:/datapath_tb/DUT/r2/clr
-add wave -position 9  sim:/datapath_tb/DUT/r2/clk
-add wave -position 10  sim:/datapath_tb/DUT/ir/q
-add wave -position 11  sim:/datapath_tb/DUT/ir/d
-add wave -position 12  sim:/datapath_tb/DUT/ir/en
-add wave -position 13  sim:/datapath_tb/DUT/ir/clr
-add wave -position 14  sim:/datapath_tb/DUT/ir/clk
+# run 100000 ns
+add wave -position end  sim:/p3_tb/DUT/ir/q
+add wave -position end  sim:/p3_tb/DUT/ir/d
+add wave -position end  sim:/p3_tb/DUT/ir/en
+add wave -position end  sim:/p3_tb/DUT/ir/clr
+add wave -position end  sim:/p3_tb/DUT/ir/clk
 restart
-run 1000ns
-do CPU-System_run_msim_rtl_verilog.do
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
-# Modifying modelsim.ini
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/select_encoder.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module select_encoder
-# -- Compiling module encoder_4_16
-# 
-# Top level modules:
-# 	select_encoder
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/conff.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module conff
-# -- Compiling module decoder_4_16
-# 
-# Top level modules:
-# 	conff
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/rotate.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module shift_left
-# -- Compiling module shift_right
-# -- Compiling module ar_shift_right
-# -- Compiling module rotate_left
-# -- Compiling module rotate_right
-# 
-# Top level modules:
-# 	shift_left
-# 	shift_right
-# 	ar_shift_right
-# 	rotate_left
-# 	rotate_right
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/mux_2_1.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mux_2_1
-# 
-# Top level modules:
-# 	mux_2_1
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/logical_ops.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module logical_or
-# -- Compiling module logical_and
-# -- Compiling module logical_not
-# -- Compiling module logical_negate
-# 
-# Top level modules:
-# 	logical_or
-# 	logical_and
-# 	logical_not
-# 	logical_negate
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/gen_regs.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module gen_regs
-# -- Compiling module pc_reg
-# -- Compiling module mar_reg
-# 
-# Top level modules:
-# 	pc_reg
-# 	mar_reg
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/encoder_32_5.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module encoder_32_5
-# 
-# Top level modules:
-# 	encoder_32_5
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/datapath.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module datapath
-# 
-# Top level modules:
-# 	datapath
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/bus_mux.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module bus_mux
-# 
-# Top level modules:
-# 	bus_mux
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_mult.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module bitpair_mult
-# -- Compiling module arithmetic_mult
-# 
-# Top level modules:
-# 	bitpair_mult
-# 	arithmetic_mult
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_div.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module arithmetic_div
-# 
-# Top level modules:
-# 	arithmetic_div
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/alu.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module alu
-# 
-# Top level modules:
-# 	alu
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/add_sub.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module arithmetic_sub
-# -- Compiling module arithmetic_add
-# -- Compiling module HA
-# -- Compiling module FA
-# -- Compiling module RCA4
-# -- Compiling module RCA16
-# -- Compiling module RCA32
-# -- Compiling module RCA64
-# 
-# Top level modules:
-# 	arithmetic_sub
-# 	arithmetic_add
-# 	RCA64
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/ram.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module ram
-# 
-# Top level modules:
-# 	ram
-# 
-# vlog -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-System {C:/Users/ian/Documents/CPU-Design/CPU-System/datapath_tb.v}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module datapath_tb
-# 
-# Top level modules:
-# 	datapath_tb
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs="+acc"  datapath_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps datapath_tb 
-# Loading work.datapath_tb
-# Loading work.datapath
-# Loading work.encoder_32_5
-# Loading work.mux_2_1
-# Loading work.gen_regs
-# Loading work.mar_reg
-# Loading work.ram
-# Loading work.select_encoder
-# Loading work.encoder_4_16
-# Loading work.conff
-# Loading work.decoder_4_16
-# Loading work.pc_reg
-# Loading work.alu
-# Loading work.logical_or
-# Loading work.logical_and
-# Loading work.logical_negate
-# Loading work.logical_not
-# Loading work.shift_left
-# Loading work.shift_right
-# Loading work.ar_shift_right
-# Loading work.rotate_left
-# Loading work.rotate_right
-# Loading work.arithmetic_add
-# Loading work.RCA32
-# Loading work.RCA16
-# Loading work.RCA4
-# Loading work.FA
-# Loading work.HA
-# Loading work.arithmetic_sub
-# Loading work.arithmetic_mult
-# Loading work.arithmetic_div
-# Loading work.bus_mux
-# 
-# add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run 1000 ns
-add wave -position 0  sim:/datapath_tb/DUT/r3/q
-add wave -position 1  sim:/datapath_tb/DUT/r3/d
-add wave -position 2  sim:/datapath_tb/DUT/r3/en
-add wave -position 3  sim:/datapath_tb/DUT/r3/clr
-add wave -position 4  sim:/datapath_tb/DUT/r3/clk
-add wave -position 5  sim:/datapath_tb/DUT/r2/q
-add wave -position 6  sim:/datapath_tb/DUT/r2/d
-add wave -position 7  sim:/datapath_tb/DUT/r2/en
-add wave -position 8  sim:/datapath_tb/DUT/r2/clr
-add wave -position 9  sim:/datapath_tb/DUT/r2/clk
-add wave -position 10  sim:/datapath_tb/DUT/ir/q
-add wave -position 11  sim:/datapath_tb/DUT/ir/d
-add wave -position 12  sim:/datapath_tb/DUT/ir/en
-add wave -position 13  sim:/datapath_tb/DUT/ir/clr
-add wave -position 14  sim:/datapath_tb/DUT/ir/clk
-restart
-run 1000ns
+run 100000ns
+# WARNING: No extended dataflow license exists
+#  Trace back: invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree.tree2"
+#     while executing
+# ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree.tree2 update"
+#     ("after" script) 
+#    <2: ::tkerror {invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree.tree2"} 
+#    <1: ::bgerror {invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree.tree2"} 
+# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
+# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
+#     while executing
+# "set grid $vsimPriv($grid:grid)"
+#     (procedure "ginfo" line 10)
+#     invoked from within
+# "ginfo trees $w"
+#     (procedure "Wave::SelectSigCmd" line 8)
+#     invoked from within
+# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "

@@ -54,12 +54,12 @@ module cpu(output [4:0] opcode,
 				
 	//(SPECIAL PURPOSE) Program Counter Register
 	pc_reg pc(data_pc, bus, pc_increment, pc_enable, clk);
-	gen_regs y(data_y, bus, y_enable, clr, clk);
-	gen_regs #(1234)hi(data_hi, bus, hi_enable, clr, clk);
-	gen_regs #(444)lo(data_lo, bus, lo_enable, clr, clk);
-	gen_regs zlo(data_zlo, c[31:0], zlo_enable, clr, clk);
-	gen_regs zhi(data_zhi, c[63:32], zhi_enable, clr, clk);
-	gen_regs ir(data_ir, bus, ir_enable, clr, clk);
+	gen_regs #(0)y(data_y, bus, y_enable, clr, clk);
+	gen_regs #(0)hi(data_hi, bus, hi_enable, clr, clk);
+	gen_regs #(0)lo(data_lo, bus, lo_enable, clr, clk);
+	gen_regs #(0)zlo(data_zlo, c[31:0], zlo_enable, clr, clk);
+	gen_regs #(0)zhi(data_zhi, c[63:32], zhi_enable, clr, clk);
+	gen_regs #(0)ir(data_ir, bus, ir_enable, clr, clk);
 	
 	//R0 Special Purpose
 	wire [31:0] r0_connection;
@@ -67,25 +67,25 @@ module cpu(output [4:0] opcode,
 	assign data_r0 = !ba_out & r0_connection;
 	
 	//Registers 1-15
-	gen_regs r1(data_r1, bus, reg_in[1], clr, clk);
-	gen_regs #(38)r2(data_r2, bus, reg_in[2], clr, clk);
-	gen_regs #(1123)r3(data_r3, bus, reg_in[3], clr, clk);
-	gen_regs #(103)r4(data_r4, bus, reg_in[4], clr, clk);
-	gen_regs r5(data_r5, bus, reg_in[5], clr, clk);
-	gen_regs #(-7)r6(data_r6, bus, reg_in[6], clr, clk);
-	gen_regs r7(data_r7, bus, reg_in[7], clr, clk);
-	gen_regs r8(data_r8, bus, reg_in[8], clr, clk);
-	gen_regs r9(data_r9, bus, reg_in[9], clr, clk);
-	gen_regs r10(data_r10, bus, reg_in[10], clr, clk);
-	gen_regs r11(data_r11, bus, reg_in[11], clr, clk);
-	gen_regs r12(data_r12, bus, reg_in[12], clr, clk);
-	gen_regs r13(data_r13, bus, reg_in[13], clr, clk);
-	gen_regs r14(data_r14, bus, reg_in[14], clr, clk);
-	gen_regs r15(data_r15, bus, reg_in[15], clr, clk);
+	gen_regs #(0)r1(data_r1, bus, reg_in[1], clr, clk);
+	gen_regs #(0)r2(data_r2, bus, reg_in[2], clr, clk);
+	gen_regs #(0)r3(data_r3, bus, reg_in[3], clr, clk);
+	gen_regs #(0)r4(data_r4, bus, reg_in[4], clr, clk);
+	gen_regs #(0)r5(data_r5, bus, reg_in[5], clr, clk);
+	gen_regs #(0)r6(data_r6, bus, reg_in[6], clr, clk);
+	gen_regs #(0)r7(data_r7, bus, reg_in[7], clr, clk);
+	gen_regs #(0)r8(data_r8, bus, reg_in[8], clr, clk);
+	gen_regs #(0)r9(data_r9, bus, reg_in[9], clr, clk);
+	gen_regs #(0)r10(data_r10, bus, reg_in[10], clr, clk);
+	gen_regs #(0)r11(data_r11, bus, reg_in[11], clr, clk);
+	gen_regs #(0)r12(data_r12, bus, reg_in[12], clr, clk);
+	gen_regs #(0)r13(data_r13, bus, reg_in[13], clr, clk);
+	gen_regs #(0)r14(data_r14, bus, reg_in[14], clr, clk);
+	gen_regs #(0)r15(data_r15, bus, reg_in[15], clr, clk);
 	
 	//Port Registers
-	gen_regs #(3286)inport(data_inport, inport_data, inport_enable, clr, clk);
-	gen_regs outport(outport_data, bus, outport_enable, clr, clk);
+	gen_regs #(0)inport(data_inport, inport_data, inport_enable, clr, clk);
+	gen_regs #(0)outport(outport_data, bus, outport_enable, clr, clk);
 
 	//CPU Control Unit Module
 	control_unit controlUnit(gra, grb, grc, r_in, r_out, y_enable, pc_enable, mar_enable, mdr_enable, mdr_out,

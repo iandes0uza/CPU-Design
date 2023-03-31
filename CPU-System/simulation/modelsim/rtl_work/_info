@@ -19,7 +19,7 @@ Z4 !s92 -vlog01compat -work work +incdir+C:/Users/ian/Documents/CPU-Design/CPU-S
 !i10b 1
 !s100 JEamJJeFFY0gNZUU7__^Z0
 !s85 0
-!s108 1679714486.966000
+!s108 1680229851.276000
 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/alu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/alu.v|
 !s101 -O0
@@ -34,7 +34,7 @@ L0 14
 R2
 r1
 31
-Z8 !s108 1679714486.361000
+Z8 !s108 1680229850.655000
 Z9 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/rotate.v|
 Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/rotate.v|
 R3
@@ -54,7 +54,7 @@ L0 11
 R2
 r1
 31
-Z14 !s108 1679714487.019000
+Z14 !s108 1680229851.337000
 Z15 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/add_sub.v|
 Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/add_sub.v|
 R3
@@ -79,7 +79,7 @@ R4
 !i10b 1
 !s100 @9@C<ME6N8BL`?[nO10Tg2
 !s85 0
-!s108 1679714486.914000
+!s108 1680229851.213000
 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_div.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_div.v|
 !s101 -O0
@@ -94,7 +94,7 @@ L0 16
 R2
 r1
 31
-Z20 !s108 1679714486.844000
+Z20 !s108 1680229851.137000
 Z21 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_mult.v|
 Z22 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/arithmetic_mult.v|
 R3
@@ -159,7 +159,7 @@ R4
 !i10b 1
 !s100 `NoTn5l4an0`2[A[>mV@43
 !s85 0
-!s108 1679714486.789000
+!s108 1680229851.075000
 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/bus_mux.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/bus_mux.v|
 !s101 -O0
@@ -174,7 +174,7 @@ L0 1
 R2
 r1
 31
-Z26 !s108 1679714486.299000
+Z26 !s108 1680229850.583000
 Z27 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/conff.v|
 Z28 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/conff.v|
 R3
@@ -183,13 +183,13 @@ R4
 !s100 PRg>K01em`k8k2Z>aP2QL1
 !s85 0
 !s101 -O0
-vdatapath
-IMd>D8XF>z60O`]l@SzPW10
-V<h:o`HGRRMO]^W4EQfkB@1
+vcontrol_unit
+IcN38=>3Y=hUUlTc@49[a]2
+V=K@0GK=Lh[PZ0V1Kl;?oP0
 R1
-w1679714477
-8C:/Users/ian/Documents/CPU-Design/CPU-System/datapath.v
-FC:/Users/ian/Documents/CPU-Design/CPU-System/datapath.v
+w1680229779
+8C:/Users/ian/Documents/CPU-Design/CPU-System/control_unit.v
+FC:/Users/ian/Documents/CPU-Design/CPU-System/control_unit.v
 L0 2
 R2
 r1
@@ -197,32 +197,32 @@ r1
 R3
 R4
 !i10b 1
-!s100 ]iV8Ua?MhRZ]KH9l1fOc[3
+!s100 iE;T_^A9HXg9`cPRgOhmR1
 !s85 0
-!s108 1679714486.732000
-!s107 C:/Users/ian/Documents/CPU-Design/CPU-System/datapath.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/datapath.v|
+!s108 1680229850.440000
+!s107 C:/Users/ian/Documents/CPU-Design/CPU-System/control_unit.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/control_unit.v|
 !s101 -O0
-vdatapath_tb
-!i10b 1
-!s100 dMUK?TUFdnX8kdV1KbRIj3
-Il5YM3:5P90Hf6<_G@H:Rn2
-VAUJPSnQX7:L2h<VWmGbCE1
+vcpu
+IQG;jCJeSR3bBk>A>[=@2;2
+VCi2_YlJYfZ_=0^IUF`YmI2
 R1
-w1679713340
-8C:/Users/ian/Documents/CPU-Design/CPU-System/datapath_tb.v
-FC:/Users/ian/Documents/CPU-Design/CPU-System/datapath_tb.v
+w1680225323
+8C:/Users/ian/Documents/CPU-Design/CPU-System/cpu.v
+FC:/Users/ian/Documents/CPU-Design/CPU-System/cpu.v
 L0 2
 R2
 r1
-!s85 0
 31
-!s108 1679714487.194000
-!s107 C:/Users/ian/Documents/CPU-Design/CPU-System/datapath_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/datapath_tb.v|
-!s101 -O0
 R3
 R4
+!i10b 1
+!s100 900aHTWd^UoF8<=gca0Q53
+!s85 0
+!s108 1680229850.379000
+!s107 C:/Users/ian/Documents/CPU-Design/CPU-System/cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/cpu.v|
+!s101 -O0
 vdecoder_4_16
 I]<4CkI3aX>GKigCI?AVJG3
 V>PMlK=9H@UiHbG9_2F4:;2
@@ -259,7 +259,7 @@ R4
 !i10b 1
 !s100 J[CjdLU>G[Kh0I_db]4fR1
 !s85 0
-!s108 1679714486.675000
+!s108 1680229851.010000
 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/encoder_32_5.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/encoder_32_5.v|
 !s101 -O0
@@ -274,7 +274,7 @@ L0 27
 R2
 r1
 31
-Z32 !s108 1679714486.233000
+Z32 !s108 1680229850.511000
 Z33 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/select_encoder.v|
 Z34 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/select_encoder.v|
 R3
@@ -315,7 +315,7 @@ L0 1
 R2
 r1
 31
-Z38 !s108 1679714486.599000
+Z38 !s108 1680229850.927000
 Z39 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/gen_regs.v|
 Z40 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/gen_regs.v|
 R3
@@ -356,7 +356,7 @@ L0 8
 R2
 r1
 31
-Z44 !s108 1679714486.510000
+Z44 !s108 1680229850.831000
 Z45 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/logical_ops.v|
 Z46 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/logical_ops.v|
 R3
@@ -461,10 +461,30 @@ R4
 !i10b 1
 !s100 eSW;=nzbeZ^F5_l[RZN6m1
 !s85 0
-!s108 1679714486.459000
+!s108 1680229850.768000
 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/mux_2_1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/mux_2_1.v|
 !s101 -O0
+vp3_tb
+!i10b 1
+!s100 Oka4MJSablU[8gc_[fGM62
+I5P13lSHEMe[V2IFaC]X6D3
+VN@C0MVzW7FiJ_@CYh7iTY3
+R1
+w1680226483
+8C:/Users/ian/Documents/CPU-Design/CPU-System/p3_tb.v
+FC:/Users/ian/Documents/CPU-Design/CPU-System/p3_tb.v
+L0 3
+R2
+r1
+!s85 0
+31
+!s108 1680229851.539000
+!s107 C:/Users/ian/Documents/CPU-Design/CPU-System/p3_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/p3_tb.v|
+!s101 -O0
+R3
+R4
 vpc_reg
 IZZzfde0cF0D?S]m^:c2`N1
 V9Y8:^>^WUAiHXL<blOEK=3
@@ -486,10 +506,10 @@ R4
 !s85 0
 !s101 -O0
 vram
-Ib[eBQo69F4Z]VZ`aX`JB_1
+IG@nGA2BiML`8_>D_8QL783
 V`l_6m>;1X92ngj4fYo8?81
 R1
-w1679678610
+w1680220335
 8C:/Users/ian/Documents/CPU-Design/CPU-System/ram.v
 FC:/Users/ian/Documents/CPU-Design/CPU-System/ram.v
 L0 1
@@ -499,9 +519,9 @@ r1
 R3
 R4
 !i10b 1
-!s100 @gMJlG[k6b<KNZfCOSn7k1
+!s100 QM9hA[JX8eZDcVDhYG6_W3
 !s85 0
-!s108 1679714487.142000
+!s108 1680229851.475000
 !s107 C:/Users/ian/Documents/CPU-Design/CPU-System/ram.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/ian/Documents/CPU-Design/CPU-System|C:/Users/ian/Documents/CPU-Design/CPU-System/ram.v|
 !s101 -O0
