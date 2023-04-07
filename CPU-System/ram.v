@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module ram(output [31:0] ram_out, input [31:0] ram_in, input [8:0] addr, input en, clk);
 
 	reg [31:0] ram_contents[0:511];

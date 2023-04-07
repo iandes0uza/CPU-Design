@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module conff(output reg con_out, input [1:0] c2_field, input [31:0] bus, input con_in);
 
 	wire [3:0] decoder_line;

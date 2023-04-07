@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module bitpair_mult(input wire[31:0] a, b, output wire[63:0] result);
 
 	//bitpair_mult bpm(b, a, result);

@@ -180,31 +180,27 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 100000 ns
-add wave -position end  sim:/p3_tb/DUT/ir/q
-add wave -position end  sim:/p3_tb/DUT/ir/d
-add wave -position end  sim:/p3_tb/DUT/ir/en
-add wave -position end  sim:/p3_tb/DUT/ir/clr
-add wave -position end  sim:/p3_tb/DUT/ir/clk
+add wave -position insertpoint sim:/p3_tb/DUT/r0/*
+add wave -position insertpoint sim:/p3_tb/DUT/r1/*
+add wave -position insertpoint sim:/p3_tb/DUT/r2/*
+add wave -position insertpoint sim:/p3_tb/DUT/r3/*
+add wave -position insertpoint sim:/p3_tb/DUT/r4/*
+add wave -position insertpoint sim:/p3_tb/DUT/r5/*
+add wave -position insertpoint sim:/p3_tb/DUT/r6/*
+add wave -position insertpoint sim:/p3_tb/DUT/r7/*
+add wave -position insertpoint sim:/p3_tb/DUT/r8/*
+add wave -position insertpoint sim:/p3_tb/DUT/r9/*
+add wave -position insertpoint sim:/p3_tb/DUT/r10/*
+add wave -position insertpoint sim:/p3_tb/DUT/r11/*
+add wave -position insertpoint sim:/p3_tb/DUT/r12/*
+add wave -position insertpoint sim:/p3_tb/DUT/r13/*
+add wave -position insertpoint sim:/p3_tb/DUT/r14/*
+add wave -position insertpoint sim:/p3_tb/DUT/r15/*
+add wave -position insertpoint sim:/p3_tb/DUT/hi/*
+add wave -position insertpoint sim:/p3_tb/DUT/lo/*
+add wave -position insertpoint sim:/p3_tb/DUT/pc/*
+add wave -position insertpoint sim:/p3_tb/DUT/ir/*
+add wave -position insertpoint sim:/p3_tb/DUT/mdr/*
+add wave -position insertpoint sim:/p3_tb/DUT/mar/*
 restart
 run 100000ns
-# WARNING: No extended dataflow license exists
-#  Trace back: invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree.tree2"
-#     while executing
-# ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree.tree2 update"
-#     ("after" script) 
-#    <2: ::tkerror {invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree.tree2"} 
-#    <1: ::bgerror {invalid command name ".main_pane.dataflow.interior.cs.body.pw.wf.top.tree.tree2"} 
-# **** Error: SelectedSignalQ cmd: Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim
-# ****        can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
-# can't read "vsimPriv(.main_pane.dataflow.interior.cs.body:grid)": no such element in array
-#     while executing
-# "set grid $vsimPriv($grid:grid)"
-#     (procedure "ginfo" line 10)
-#     invoked from within
-# "ginfo trees $w"
-#     (procedure "Wave::SelectSigCmd" line 8)
-#     invoked from within
-# "Wave::SelectSigCmd .main_pane.dataflow.interior.cs.body.pw.wf.top.tree sim"
-#     ("eval" body line 1)
-#     invoked from within
-# "eval $p $tankNamespace "

@@ -15,5 +15,5 @@ initial
 end
 
 always
-		#10 clk <= ~clk;
+		#5 clk <= ~clk;
 endmodule

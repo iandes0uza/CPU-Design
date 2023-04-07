@@ -27,7 +27,7 @@ module cpu(output [4:0] opcode,
 	
 	//Bus Selection Module
 	wire [4:0] select;
-	encoder_32_5 output_mux({{8'b0}, c_out, inport_out, mdr_out, pc_out, zlo_out, zhi_out, lo_out, hi_out, reg_out[15:0]}, select);							
+	encoder_32_5 output_mux({{8'b0}, c_out, inport_out, mdr_out, pc_out, zlo_out, zhi_out, lo_out, hi_out, reg_out_IR[15:0]}, select);							
 
 	//MDR Connection
 	wire [31:0] mdr_connection;
@@ -35,11 +35,11 @@ module cpu(output [4:0] opcode,
 	gen_regs mdr(data_mdr, mdr_connection, mdr_enable, clr, clk);
 	
 	//MAR Connection
-	wire [8:0] data_mar;
-	mar_reg mar(data_mar, bus, mar_enable, clr, clk);
+	wire [8:0] addr;
+	mar_reg mar(addr, bus, mar_enable, clr, clk);
 	
 	//RAM Subsystem Connection
-	ram ram_connection(data_ram, data_mdr, data_mar, ram_enable, clk);
+	ram ram_connection(data_ram, data_mdr, addr, ram_enable, clk);
 	
 	//Select & Encode Logical Unit
 	wire [3:0] decoder_in;
@@ -90,7 +90,7 @@ module cpu(output [4:0] opcode,
 	//CPU Control Unit Module
 	control_unit controlUnit(gra, grb, grc, r_in, r_out, y_enable, pc_enable, mar_enable, mdr_enable, mdr_out,
 									 ir_enable, mdr_read, hi_enable, lo_enable, zhi_enable, zlo_enable, pc_increment, con_enable,
-									 ram_enable, inport_enable, outport_enable, inport_out, pc_out, y_out, zlo_out, zhi_out,
+									 ram_enable, inport_enable, outport_enable, inport_out, pc_out, zlo_out, zhi_out,
 									 lo_out, hi_out, ba_out, c_out, run, reg_enable_in, data_ir, clk, rst, stp);
 	//ALU Module
 	alu alu_module(data_y, bus, opcode, c[63:0], con_out, clk);

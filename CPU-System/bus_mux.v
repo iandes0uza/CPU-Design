@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module bus_mux(output reg [31:0] out,
 					input wire [4:0] in,
 					input wire [31:0] r0, r1, r2, r3, r4, r5, r6, r7, r8, r9,
@@ -6,7 +7,10 @@ module bus_mux(output reg [31:0] out,
 											zhigh, zlow, pc, mdr, port, sign
 											);
 
-	always@(*)
+	always@(in, r0, r1, r2, r3, r4, r5, r6, r7, r8, r9,
+											r10, r11, r12, r13, r14, r15, 
+											high, low,
+											zhigh, zlow, pc, mdr, port, sign)
 	begin
 		case(in)
 			5'b00000 : out = r0;

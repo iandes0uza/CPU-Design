@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module alu(input wire [31:0] in_A, in_B, input wire [4:0] op_code, output reg [63:0] out, input bf, clk);
 
 	//ALU wires (32-bit)

@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module select_encoder(input [31:0] ir, input rIN, rOUT, baOUT, gra, grb, grc,
 					 output [31:0] data_sign, output [15:0] reg_in, reg_out, 
 					 output [4:0] op, output reg [3:0] decode);

@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module encoder_32_5(input wire [31:0] in, output reg [4:0] out);
 
 	always @(*)

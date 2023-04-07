@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module arithmetic_sub(input wire [31:0] a, b, output wire c_out, output wire [31:0] result);
 
 	RCA32 sum(c_out, result[31:0], a[31:0], (b[31:0])*(-1), 1'b0);

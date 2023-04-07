@@ -1,3 +1,4 @@
+`timescale 1ns/10ps
 module arithmetic_div(input [31:0] in_a, in_b, output reg[63:0] result);
 	reg [31:0] M, Q;
    reg [32:0] A;
